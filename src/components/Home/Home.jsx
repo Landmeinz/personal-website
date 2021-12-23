@@ -9,14 +9,31 @@ import axios from 'axios'
 // --- MUI --- //
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
 
 // --- STYLES --- // 
 import {
-    sxCard,
+    sxHomeContainer,
     sxHomeHeader,
 } from '../App/App.style';
 
+
 function Home() {
+
+    return (
+
+        <Box sx={sxHomeContainer}>
+
+            <Typography variant="h4">Home page info title:</Typography>
+            <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography>
+
+        </Box>
+    );
+}
+
+export default Home;
+
+
 
     // const history = useHistory();
     // const dispatch = useDispatch();
@@ -65,22 +82,3 @@ function Home() {
     //     }; // switch
 
     // }; // handleClick
-
-
-
-
-    return (
-
-        <Box sx={sxCard}>
-            <Paper elevation={2}>
-
-                <Box sx={sxHomeHeader}>
-                    <h3>BIG OLD HEADER ON THE HOME PAGE</h3>
-                </Box>
-
-            </Paper>
-        </Box>
-    );
-}
-
-export default Home;

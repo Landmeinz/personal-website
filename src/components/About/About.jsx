@@ -22,7 +22,6 @@ import {
 } from '../App/App.style';
 
 
-
 function About() {
 
     // INVENTORY grab ALL the genres from the store;
@@ -34,8 +33,9 @@ function About() {
 
 
     return (
-        <Box sx={sxAboutContainer}> 
-        <Typography>HELLO THIS IS THE SECTION WHERE I TELL YOU A LITTLE BIT ABOUT MYSELF AND HERE IT GOES</Typography>
+        <Box sx={sxAboutContainer}>
+            <Typography variant="h4">Hello, a little about me:</Typography>
+            <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography>
 
             <Button variant="contained" sx={sxButton} type="submit">
                 <SaveOutlinedIcon fontSize='large' />WHAT'S UP MY KITTY KATS</Button>

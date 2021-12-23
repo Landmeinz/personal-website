@@ -14,8 +14,11 @@ export const theme = createTheme({
             main: 'hsla(360, 70%, 50%, .9)',
         },
         secondary: {
-            main: 'hsla(360, 50%, 50%, .9)',
+            main: 'hsla(220, 50%, 50%, .9)',
         },
+        info: {
+            main: 'hsla(0, 5%, 10%, .9)'
+        }
     },
 });
 
@@ -49,21 +52,19 @@ export const sxHeaderContainer = {
 
 
 
+
 // --- HEADER ---  // 
 
 // box that contains the header; not sure why i took it out of the h1 tag; 
 export const sxHeader = {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    fontWeight: 'light',
-
-    // border: 1,
-
-    fontSize: 40,
+    fontSize: 60,
     fontWeight: 700,
-    mr: 4,
+    mt: 2,
+
+    color: 'primary.main',
 }
+
+
 
 
 
@@ -84,33 +85,19 @@ export const sxButtonBox = {
 
 // --- HOME PAGE --- // 
 
-export const sxContainerBox = {
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'center',
-}
-
 // box properties that holds our movie title and our image together; 
-export const sxCard = {
+export const sxHomeContainer = {
+    border: '1px solid red',
     display: 'flex',
-    justifyContent: 'center',
-    textAlign: 'center',
-    m: .5,
-    width: '25%',
+    flexDirection: 'column',
+    alignItems: 'center',
+    my: 1,
     mx: 'auto',
+    width: '80%',
+
+    color: 'info.main',
 }; // sxCard
 
-// box properties that holds our movie title info;
-export const sxHomeHeader = {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-
-    '& > :not(style)': {
-        height: 35,
-        p: .5,
-    },
-}; // sxHeader
 
 
 
@@ -119,11 +106,14 @@ export const sxHomeHeader = {
 // --- ABOUT PAGE --- //
 
 export const sxAboutContainer = {
+    border: '1px solid red',
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'center',
-    height: 56,
-    m: 1,
-    gap: 1,
+    alignItems: 'center',
+    my: 1,
+    mx: 'auto',
+    width: '80%',
+
+    color: 'info.main',
 }
 

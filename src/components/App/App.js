@@ -22,7 +22,6 @@ import { ThemeProvider } from '@mui/material/styles';
 // --- STYLES --- // 
 import { 
   theme,
-  sxType,
   sxHeaderContainer,
 } from './App.style.js';
 

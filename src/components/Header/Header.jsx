@@ -1,6 +1,7 @@
 
 // --- MUI --- //
 import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
 
 // --- STYLES --- // 
 import {
@@ -11,7 +12,7 @@ import {
 function Header() {
 
     return (
-        <Box sx={sxHeader}>Website Mother Fucker</Box>
+        <Typography sx={sxHeader} variant="h1">ERIC MEINZER</Typography>
     )
 }; // Header
 
