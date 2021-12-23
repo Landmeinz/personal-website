@@ -8,6 +8,13 @@ import Box from '@mui/material/Box';
 import LocalMoviesOutlinedIcon from '@mui/icons-material/LocalMoviesOutlined';
 import LibraryAddCheckOutlinedIcon from '@mui/icons-material/LibraryAddCheckOutlined';
 
+// --- STYLES --- // 
+import {
+    sxButtonBox,
+    sxButton,
+} from '../App/App.style';
+
+
 function NavBar() {
 
     const history = useHistory();
@@ -16,14 +23,14 @@ function NavBar() {
     function handleClick(pageDirection) {
 
         switch (pageDirection) {
-            case 'movieList':
+            case 'home':
                 console.log('CLICKED on movie list button');
                 history.push('/')
                 break;
 
-            case 'addMovie':
-                console.log('CLICKED on movie list button');
-                history.push('/addMovie')
+            case 'about':
+                console.log('CLICKED on about button');
+                history.push('/about')
                 break;
 
             default:
@@ -33,34 +40,16 @@ function NavBar() {
     }; // handleClick
 
 
-
-    const sxButtonBox = {
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        width: 300,
-
-    }
-
-    const sxButton = {
-        fontSize: 12,
-        fontWeight: 500,
-        lineHeight: 1.4,
-        m: 1,
-
-    }
-
-
     return (
         <Box sx={sxButtonBox}>
 
-            <Button variant="contained" sx={sxButton}
-                onClick={() => handleClick('movieList')}
-            ><LocalMoviesOutlinedIcon fontSize='large'/>WATCH LIST</Button>
+            <Button variant="outlined" sx={sxButton}
+                onClick={() => handleClick('home')}
+            ><LocalMoviesOutlinedIcon fontSize='large' />HOME</Button>
 
-            <Button variant="contained" sx={sxButton}
-                onClick={() => handleClick('addMovie')}
-            ><LibraryAddCheckOutlinedIcon fontSize='large'/>ADD NEW MOVIE</Button>
+            <Button variant="outlined" sx={sxButton}
+                onClick={() => handleClick('about')}
+            ><LibraryAddCheckOutlinedIcon fontSize='large' />WHO?</Button>
 
         </Box>
     )
