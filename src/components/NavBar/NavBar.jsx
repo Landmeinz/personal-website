@@ -10,6 +10,7 @@ import HelpIcon from '@mui/icons-material/Help';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Tooltip from '@mui/material/Tooltip';
+import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 
 
 
@@ -52,6 +53,12 @@ function NavBar() {
                 window.open(linkedInUrl, '_blank', 'noopener')
                 break;
 
+            case 'resume':
+                console.log('CLICKED on linkedin button');
+                const resumeUrl = ('https://www.dropbox.com/s/ibwsmvjbnmhybxr/Eric.Meinzer.2021-12-05.pdf?dl=0')
+                window.open(resumeUrl, '_blank', 'noopener')
+                break;
+
             default:
                 break;
         }
@@ -83,6 +90,12 @@ function NavBar() {
             <Tooltip title="LinkedIn" placement="left">
                 <Box sx={sxNavLink} onClick={() => handleClick('linkedin')}>
                     <LinkedInIcon fontSize='large' />
+                </Box>
+            </Tooltip>
+
+            <Tooltip title="Resume" placement="left">
+                <Box sx={sxNavLink} onClick={() => handleClick('resume')}>
+                    <LibraryBooksIcon fontSize='large' />
                 </Box>
             </Tooltip>
 
