@@ -20,7 +20,14 @@ export const theme = createTheme({
             main: 'hsla(0, 5%, 10%, .9)'
         }
     },
+    breakpoints: {
+        values: {
+            mobile: 0,
+            desktop: 750,
+        },
+    },
 });
+
 
 export const sxButton = {
     fontSize: 12,
@@ -38,17 +45,66 @@ export const sxType = {
     fontFamily: 'default',
 }
 
-export const sxHeaderContainer = {
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: 165,
-    gap: 1,
+export const sxAppContainer = {
 
-    // border: 2,
+    // shared properties
+    // border: '1px solid red',
+    display: 'flex',
+    position: 'relative',
+    mx: 'auto',
+    mt: 3,
+
+    // desktop sizing
+    [theme.breakpoints.only('desktop')]: {
+        flexDirection: 'row',
+        justifyContent: 'center',
+        minWidth: 750,
+        maxWidth: '85%',
+    },
+    // mobile sizing
+    [theme.breakpoints.only('mobile')]: {
+        flexDirection: 'column',
+        alignItems: 'center',
+        minWidth: 380,
+        maxWidth: '95%',
+    },
 }
 
+
+
+export const sxHeaderContainer = {
+
+    // shared properties
+    // border: '1px solid red',
+    display: 'flex',
+    flexDirection: 'column',
+
+    // desktop sizing
+    [theme.breakpoints.only('desktop')]: {
+        position: 'sticky',
+        height: '100%',
+        width: 300,
+    },
+
+    // mobile sizing
+    [theme.breakpoints.only('mobile')]: {
+        position: 'static',
+        height: '100%',
+        width: '100%',
+    },
+}
+
+export const sxBodyContainer = {
+    // border: '1px solid green',
+    // position: 'absolute',
+    display: 'flex',
+    flexDirection: 'column',
+    // justifyContent: 'center',
+    // alignItems: 'center',
+    height: '100%',
+    width: '100%'
+    // gap: 1,
+}
 
 
 
@@ -57,28 +113,71 @@ export const sxHeaderContainer = {
 
 // box that contains the header; not sure why i took it out of the h1 tag; 
 export const sxHeader = {
-    fontSize: 60,
+    // border: '1px solid gray',
+    fontSize: 50,
     fontWeight: 700,
-    mt: 2,
-
+    textAlign: 'center',
     color: 'primary.main',
 }
 
-
-
-
+export const sxProfilePhoto = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: '50%',
+    height: 150,
+    width: 150,
+    mx: 'auto',
+    mt: 1,
+    mb: 4,
+    boxShadow: 3,
+}
 
 
 // --- NAV BUTTONS --- // 
 
 export const sxButtonBox = {
+
+    // shared properties
+    // border: '1px solid blue',
+    display: 'flex',
+    alignItems: 'center',
+    gap: 1,
+    mb: 1,
+
+    // desktop sizing
+    [theme.breakpoints.only('desktop')]: {
+        flexDirection: 'column',
+        alignItems: 'center',
+    },
+    // mobile sizing
+    [theme.breakpoints.only('mobile')]: {
+        flexDirection: 'row',
+        justifyContent: 'center',
+    },
+}
+
+export const sxNavLink = {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    width: '20%',
-}
+    // border: 1,
+    // borderColor: 'secondary.main',
+    height: 50,
+    width: 50,
+    borderRadius: '50%',
+    cursor: 'pointer',
+    boxShadow: 2,
+    color: 'primary.main',
 
+    '&:hover': {
+        transform: 'scale(1.1)',
+        boxShadow: 4,
+        border: 1,
+        borderColor: 'primary.main',
+    }
+}
 
 
 
@@ -87,13 +186,15 @@ export const sxButtonBox = {
 
 // box properties that holds our movie title and our image together; 
 export const sxHomeContainer = {
-    border: '1px solid red',
+    // border: '1px solid red',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     my: 1,
     mx: 'auto',
-    width: '80%',
+    width: '95%',
+    boxShadow: 2,
+    borderRadius: 1,
 
     color: 'info.main',
 }; // sxCard
@@ -106,13 +207,15 @@ export const sxHomeContainer = {
 // --- ABOUT PAGE --- //
 
 export const sxAboutContainer = {
-    border: '1px solid red',
+    // border: '1px solid red',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     my: 1,
     mx: 'auto',
-    width: '80%',
+    width: '95%',
+    boxShadow: 2,
+    borderRadius: 1,
 
     color: 'info.main',
 }

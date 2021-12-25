@@ -14,7 +14,6 @@ import Typography from '@mui/material/Typography';
 // --- STYLES --- // 
 import {
     sxHomeContainer,
-    sxHomeHeader,
 } from '../App/App.style';
 
 
@@ -24,8 +23,17 @@ function Home() {
 
         <Box sx={sxHomeContainer}>
 
-            <Typography variant="h4">Home page info title:</Typography>
+            <Typography variant="h4">Software Development</Typography>
             <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography>
+            <br/>
+
+            <Typography variant="h4">Lighting Design</Typography>
+            <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography>
+            <br/>
+
+            <Typography variant="h4">Architecture</Typography>
+            <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography>
+            <br/>
 
         </Box>
     );

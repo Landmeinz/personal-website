@@ -30,18 +30,23 @@ function About() {
     const dispatch = useDispatch();
     const history = useHistory();
 
-
-
     return (
         <Box sx={sxAboutContainer}>
             <Typography variant="h4">Hello, a little about me:</Typography>
-            <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography>
+            <Typography variant="body1">
+                Living life in between the physical and the digital world, my name is Eric Meinzer and I like to design and build things.
+            </Typography>
 
-            <Button variant="contained" sx={sxButton} type="submit">
-                <SaveOutlinedIcon fontSize='large' />WHAT'S UP MY KITTY KATS</Button>
+            <Typography variant="body1">
+                My current focus is on software engineering, designing and developing fluid digital products.
+            </Typography>
+
+            <Typography variant="body1">
+                Thanks for stopping by! CONNECT with me on LinkedIn or GitHub
+            </Typography>
+
         </Box>
-
     )
-}; // About
+};
 
 export default About;

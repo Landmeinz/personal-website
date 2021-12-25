@@ -5,13 +5,20 @@ import { useDispatch, useSelector } from 'react-redux';
 // --- MUI --- //
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
-import LocalMoviesOutlinedIcon from '@mui/icons-material/LocalMoviesOutlined';
-import LibraryAddCheckOutlinedIcon from '@mui/icons-material/LibraryAddCheckOutlined';
+import CottageIcon from '@mui/icons-material/Cottage';
+import HelpIcon from '@mui/icons-material/Help';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import Tooltip from '@mui/material/Tooltip';
+
+
+
 
 // --- STYLES --- // 
 import {
     sxButtonBox,
     sxButton,
+    sxNavLink,
 } from '../App/App.style';
 
 
@@ -33,6 +40,18 @@ function NavBar() {
                 history.push('/about')
                 break;
 
+            case 'github':
+                console.log('CLICKED on github button');
+                const githubUrl = ('https://github.com/Landmeinz')
+                window.open(githubUrl, '_blank', 'noopener')
+                break;
+
+            case 'linkedin':
+                console.log('CLICKED on linkedin button');
+                const linkedInUrl = ('https://www.linkedin.com/in/ericmeinzer/')
+                window.open(linkedInUrl, '_blank', 'noopener')
+                break;
+
             default:
                 break;
         }
@@ -43,15 +62,31 @@ function NavBar() {
     return (
         <Box sx={sxButtonBox}>
 
-            <Button variant="outlined" sx={sxButton}
-                onClick={() => handleClick('home')}
-            ><LocalMoviesOutlinedIcon fontSize='large' />HOME</Button>
+            <Tooltip title="Home" placement="left">
+                <Box sx={sxNavLink} onClick={() => handleClick('home')}>
+                    <CottageIcon fontSize='large' />
+                </Box>
+            </Tooltip>
 
-            <Button variant="outlined" sx={sxButton}
-                onClick={() => handleClick('about')}
-            ><LibraryAddCheckOutlinedIcon fontSize='large' />WHO?</Button>
+            <Tooltip title="About" placement="left">
+                <Box sx={sxNavLink} onClick={() => handleClick('about')}>
+                    <HelpIcon fontSize='large' />
+                </Box>
+            </Tooltip>
 
-        </Box>
+            <Tooltip title="GitHub" placement="left">
+                <Box sx={sxNavLink} onClick={() => handleClick('github')}>
+                    <GitHubIcon fontSize='large' />
+                </Box>
+            </Tooltip>
+
+            <Tooltip title="LinkedIn" placement="left">
+                <Box sx={sxNavLink} onClick={() => handleClick('linkedin')}>
+                    <LinkedInIcon fontSize='large' />
+                </Box>
+            </Tooltip>
+
+        </Box >
     )
 }; // NavBar
 

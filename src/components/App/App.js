@@ -20,38 +20,46 @@ import Box from '@mui/material/Box';
 import { ThemeProvider } from '@mui/material/styles';
 
 // --- STYLES --- // 
-import { 
+import {
   theme,
+  sxAppContainer,
   sxHeaderContainer,
+  sxBodyContainer
 } from './App.style.js';
 
 
-function App() {  
+function App() {
 
   return (
     <Box>
 
       <ThemeProvider theme={theme}>
-          <Router>
-            
+        <Router>
+
+          <Box sx={sxAppContainer}>
+
             <Box sx={sxHeaderContainer}>
               <Header />
               <NavBar />
             </Box>
 
-            <Route path="/" exact>
-              <Home />
-            </Route>
+            <Box sx={sxBodyContainer}>
+              <Route path="/" exact>
+                <Home />
+              </Route>
 
-            {/* <Route path="/details" >
+              {/* <Route path="/details" >
               <DetailsPage />
             </Route> */}
 
-            <Route path="/about" >
-              <About />
-            </Route>
+              <Route path="/about" >
+                <About />
+              </Route>
+            </Box>
+            
+          </Box>
 
-          </Router>
+        </Router>
       </ThemeProvider>
 
     </Box>
