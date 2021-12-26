@@ -19,7 +19,11 @@ import Typography from '@mui/material/Typography';
 import {
     sxAboutContainer,
     sxButton,
+    trans,
 } from '../App/App.style';
+
+// --- PAGE ANIMATIONS FRAMER MOTION --- //
+import { motion, AnimatePresence } from "framer-motion"
 
 
 function About() {
@@ -31,21 +35,29 @@ function About() {
     const history = useHistory();
 
     return (
-        <Box sx={sxAboutContainer}>
-            <Typography variant="h4">Hello, a little about me:</Typography>
-            <Typography variant="body1">
-                Living life in between the physical and the digital world, my name is Eric Meinzer and I like to design and build things.
-            </Typography>
+        <motion.div
+            initial={trans.initial}
+            animate={trans.animate}
+            exit={trans.exit}
+            style={trans.style}
+            transition={trans.time}
+        >
+            <Box sx={sxAboutContainer}>
+                <Typography variant="h4">Hello, a little about me:</Typography>
+                <Typography variant="body1">
+                    Living life in between the physical and the digital world, my name is Eric Meinzer and I like to design and build things.
+                </Typography>
 
-            <Typography variant="body1">
-                My current focus is on software engineering, designing and developing fluid digital products.
-            </Typography>
+                <Typography variant="body1">
+                    My current focus is on software engineering, designing and developing fluid digital products.
+                </Typography>
 
-            <Typography variant="body1">
-                Thanks for stopping by! CONNECT with me on LinkedIn or GitHub
-            </Typography>
+                <Typography variant="body1">
+                    Thanks for stopping by! CONNECT with me on LinkedIn or GitHub
+                </Typography>
 
-        </Box>
+            </Box>
+        </motion.div>
     )
 };
 

@@ -6,6 +6,17 @@
 
 // --- SHARED ON ALL PAGES --- // 
 
+// --- ANIMATIONS --- //
+
+export const trans = {
+    time:       { duration: .35 },
+    initial:    { rotate: -20, x: -600, opacity: -1.5 },
+    animate:    { rotate: 0, x: 10, opacity: 1 },
+    // exit:       { rotate: -30 },
+}
+
+// --- STYLES --- //
+
 import { createTheme } from '@mui/material/styles';
 
 export const theme = createTheme({
@@ -78,6 +89,8 @@ export const sxHeaderContainer = {
     // border: '1px solid red',
     display: 'flex',
     flexDirection: 'column',
+    bgcolor: 'white',
+    zIndex: 200,
 
     // desktop sizing
     [theme.breakpoints.only('desktop')]: {

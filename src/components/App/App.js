@@ -1,7 +1,7 @@
-import { HashRouter as Router, Route, Link } from 'react-router-dom';
 
+import { HashRouter as Router, Route, Link, Switch, useLocation } from 'react-router-dom';
 
-// components //
+// --- components --- //
 import Header from '../Header/Header.jsx';
 import NavBar from '../NavBar/NavBar.jsx';
 import MovieList from '../MovieList/MovieList';
@@ -27,8 +27,19 @@ import {
   sxBodyContainer
 } from './App.style.js';
 
+// --- PAGE ANIMATIONS FRAMER MOTION --- //
+// import { motion, AnimatePresence } from "framer-motion"
+// import { AnimatePresence } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
+
+
 
 function App() {
+
+
+  // const location = useLocation();
+  // console.log('this is the location', location.pathname);
+
 
   return (
     <Box>
@@ -44,19 +55,23 @@ function App() {
             </Box>
 
             <Box sx={sxBodyContainer}>
-              <Route path="/" exact>
-                <Home />
-              </Route>
 
-              {/* <Route path="/details" >
-              <DetailsPage />
-            </Route> */}
+              <AnimatePresence exitBeforeEnter initial={true}>
+                <Switch>
 
-              <Route path="/about" >
-                <About />
-              </Route>
+                  <Route path="/" exact>
+                    <Home />
+                  </Route>
+
+                  <Route path="/about">
+                    <About />
+                  </Route>
+
+                </Switch>
+              </AnimatePresence>
+
             </Box>
-            
+
           </Box>
 
         </Router>

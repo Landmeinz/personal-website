@@ -14,28 +14,39 @@ import Typography from '@mui/material/Typography';
 // --- STYLES --- // 
 import {
     sxHomeContainer,
+    trans,
 } from '../App/App.style';
+
+// --- PAGE ANIMATIONS FRAMER MOTION --- //
+import { motion, AnimatePresence } from "framer-motion"
 
 
 function Home() {
 
     return (
+        <motion.div
+            initial={trans.initial}
+            animate={trans.animate}
+            exit={trans.exit}
+            style={trans.style}
+            transition={trans.time}
+        >
+            <Box sx={sxHomeContainer} >
 
-        <Box sx={sxHomeContainer}>
+                <Typography variant="h4">Software Development</Typography>
+                <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography>
+                <br />
 
-            <Typography variant="h4">Software Development</Typography>
-            <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography>
-            <br/>
+                <Typography variant="h4">Lighting Design</Typography>
+                <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography>
+                <br />
 
-            <Typography variant="h4">Lighting Design</Typography>
-            <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography>
-            <br/>
+                <Typography variant="h4">Architecture</Typography>
+                <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography>
+                <br />
 
-            <Typography variant="h4">Architecture</Typography>
-            <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography>
-            <br/>
-
-        </Box>
+            </Box>
+        </motion.div>
     );
 }
 
