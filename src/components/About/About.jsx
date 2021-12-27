@@ -6,13 +6,6 @@ import { useState, useEffect } from 'react';
 // --- MUI --- //
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
-import SaveOutlinedIcon from '@mui/icons-material/SaveOutlined';
-import TextField from '@mui/material/TextField';
-import Select from '@mui/material/Select';
-import MenuItem from '@mui/material/MenuItem';
-import NativeSelect from '@mui/material/NativeSelect';
 import Typography from '@mui/material/Typography';
 
 // --- STYLES --- // 
@@ -34,6 +27,7 @@ function About() {
     const dispatch = useDispatch();
     const history = useHistory();
 
+    // our transition properties are located in app.style.js
     return (
         <motion.div
             initial={trans.initial}
@@ -44,6 +38,7 @@ function About() {
         >
             <Box sx={sxAboutContainer}>
                 <Typography variant="h4">Hello, a little about me:</Typography>
+                
                 <Typography variant="body1">
                     Living life in between the physical and the digital world, my name is Eric Meinzer and I like to design and build things.
                 </Typography>

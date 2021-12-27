@@ -206,9 +206,10 @@ export const sxHomeContainer = {
     alignItems: 'center',
     my: 1,
     mx: 'auto',
-    width: '95%',
+    width: '90%',
     boxShadow: 2,
     borderRadius: 1,
+    p: 2,
 
     color: 'info.main',
 }; // sxCard
@@ -227,9 +228,10 @@ export const sxAboutContainer = {
     alignItems: 'center',
     my: 1,
     mx: 'auto',
-    width: '95%',
+    width: '90%',
     boxShadow: 2,
     borderRadius: 1,
+    p: 2,
 
     color: 'info.main',
 }

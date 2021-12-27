@@ -19,12 +19,12 @@ function Header() {
     const history = useHistory();
 
     return (
-        <Box onClick={() => history.push('/')}>
+        <Box onClick={() => history.push('/')} sx={{cursor: 'pointer'}}>
             <Typography sx={sxHeader} variant="h1">ERIC MEINZER</Typography>
             <Tooltip title="That's Me!" placement="left">
                 <CardMedia sx={sxProfilePhoto}
                     component="img"
-                    image="images/EM-Smile.jpg"
+                    image="images/eric.jpg"
                     alt="super handsome photo of Eric"
                 />
             </Tooltip>
