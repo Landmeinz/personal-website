@@ -30,12 +30,12 @@ function NavBar() {
 
         switch (pageDirection) {
             case 'home':
-                console.log('CLICKED on movie list button');
+                console.log('CLICKED on the home button');
                 history.push('/')
                 break;
 
             case 'about':
-                console.log('CLICKED on about button');
+                console.log('CLICKED on the about button');
                 history.push('/about')
                 break;
 
@@ -52,7 +52,7 @@ function NavBar() {
                 break;
 
             case 'resume':
-                console.log('CLICKED on linkedin button');
+                console.log('CLICKED on resume button');
                 const resumeUrl = ('https://www.dropbox.com/s/ibwsmvjbnmhybxr/Eric.Meinzer.2021-12-05.pdf?dl=0')
                 window.open(resumeUrl, '_blank', 'noopener')
                 break;
