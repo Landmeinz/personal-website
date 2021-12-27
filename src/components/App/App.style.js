@@ -138,8 +138,8 @@ export const sxProfilePhoto = {
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: '50%',
-    height: 150,
-    width: 150,
+    height: 145,
+    width: 145,
     mx: 'auto',
     mt: 1,
     mb: 4,
@@ -177,8 +177,8 @@ export const sxNavLink = {
     alignItems: 'center',
     // border: 1,
     // borderColor: 'secondary.main',
-    height: 50,
-    width: 50,
+    height: 55,
+    width: 55,
     borderRadius: '50%',
     cursor: 'pointer',
     boxShadow: 2,
@@ -191,6 +191,7 @@ export const sxNavLink = {
         borderColor: 'primary.main',
     }
 }
+
 
 
 

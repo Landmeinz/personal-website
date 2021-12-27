@@ -4,9 +4,6 @@ import { HashRouter as Router, Route, Link, Switch, useLocation } from 'react-ro
 // --- components --- //
 import Header from '../Header/Header.jsx';
 import NavBar from '../NavBar/NavBar.jsx';
-import MovieList from '../MovieList/MovieList';
-import DetailsPage from '../DetailsPage/DetailsPage.jsx';
-import AddMovie from '../AddMovie/AddMovie.jsx';
 import Home from '../Home/Home.jsx';
 import About from '../About/About.jsx';
 
