@@ -141,9 +141,9 @@ export const sxProfilePhoto = {
     height: 145,
     width: 145,
     mx: 'auto',
-    mt: 1,
-    mb: 4,
-    boxShadow: 3,
+    mt: 2,
+    mb: 3,
+    boxSdow: 3,
 }
 
 

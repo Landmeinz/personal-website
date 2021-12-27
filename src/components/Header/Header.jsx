@@ -1,9 +1,11 @@
 
+import { useHistory } from 'react-router-dom';
+
 // --- MUI --- //
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import CardMedia from '@mui/material/CardMedia';
-
+import Tooltip from '@mui/material/Tooltip';
 
 // --- STYLES --- // 
 import {
@@ -14,14 +16,18 @@ import {
 
 function Header() {
 
+    const history = useHistory();
+
     return (
-        <Box>
+        <Box onClick={() => history.push('/')}>
             <Typography sx={sxHeader} variant="h1">ERIC MEINZER</Typography>
-            <CardMedia sx={sxProfilePhoto}
-                component="img"
-                image="https://i.pinimg.com/originals/f8/2f/ba/f82fbac7514f944aacc0257445c1f89e.jpg"
-                alt="super handsome photo of Eric"
-            />
+            <Tooltip title="That's Me!" placement="left">
+                <CardMedia sx={sxProfilePhoto}
+                    component="img"
+                    image="images/EM-Smile.jpg"
+                    alt="super handsome photo of Eric"
+                />
+            </Tooltip>
         </Box>
     )
 }; // Header
