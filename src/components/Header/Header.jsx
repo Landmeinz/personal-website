@@ -20,7 +20,9 @@ function Header() {
 
     return (
         <Box onClick={() => history.push('/')} sx={{cursor: 'pointer'}}>
-            <Typography sx={sxHeader} variant="h1">ERIC MEINZER</Typography>
+
+            <Typography sx={sxHeader}>ERIC MEINZER</Typography>
+
             <Tooltip title="That's Me!" placement="left">
                 <CardMedia sx={sxProfilePhoto}
                     component="img"

@@ -95,6 +95,7 @@ export const sxHeaderContainer = {
     // desktop sizing
     [theme.breakpoints.only('desktop')]: {
         position: 'sticky',
+        top: 30,
         height: '100%',
         width: 300,
     },
@@ -127,8 +128,9 @@ export const sxBodyContainer = {
 // box that contains the header; not sure why i took it out of the h1 tag; 
 export const sxHeader = {
     // border: '1px solid gray',
-    fontSize: 50,
+    fontSize: 38,
     fontWeight: 700,
+    lineHeight: .9,
     textAlign: 'center',
     color: 'primary.main',
 }
@@ -207,7 +209,6 @@ export const sxHomeContainer = {
     my: 1,
     mx: 'auto',
     width: '90%',
-    boxShadow: 2,
     borderRadius: 1,
     p: 2,
 
@@ -222,17 +223,46 @@ export const sxHomeContainer = {
 // --- ABOUT PAGE --- //
 
 export const sxAboutContainer = {
-    // border: '1px solid red',
+    border: '1px solid red',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     my: 1,
     mx: 'auto',
     width: '90%',
-    boxShadow: 2,
     borderRadius: 1,
     p: 2,
+    gap: 20,
 
     color: 'info.main',
 }
+
+export const sxHeroContent = {
+    border: '1px solid green',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    textAlign: 'center',
+    width: '100%',
+    gap: 10,
+    mb: 2, 
+}
+
+export const sxHeroText = {
+    
+    fontWeight: 500,
+    color: 'info.main',
+}
+
+export const sxAboutBody = {
+    border: '1px solid blue',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    textAlign: 'left',
+    width: '100%',
+    gap: 10,
+    mb: 2, 
+}
+
 

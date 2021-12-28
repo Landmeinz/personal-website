@@ -91,11 +91,11 @@ function NavBar() {
                 </Box>
             </Tooltip>
 
-            <Tooltip title="Resume" placement="left">
+            {/* <Tooltip title="Resume" placement="left">
                 <Box sx={sxNavLink} onClick={() => handleClick('resume')}>
                     <LibraryBooksIcon fontSize='large' />
                 </Box>
-            </Tooltip>
+            </Tooltip> */}
 
         </Box >
     )

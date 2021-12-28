@@ -15,6 +15,8 @@ import Typography from '@mui/material/Typography';
 import {
     sxHomeContainer,
     trans,
+    sxHeroContent,
+    sxHeroText,
 } from '../App/App.style';
 
 // --- PAGE ANIMATIONS FRAMER MOTION --- //
@@ -33,17 +35,30 @@ function Home() {
         >
             <Box sx={sxHomeContainer} >
 
-                <Typography variant="h4">Software Development</Typography>
-                <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography>
-                <br />
+                <Box sx={sxHeroContent}>
+                    <Typography variant="h1" sx={sxHeroText}>Software Development</Typography>
+                    <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography>
+                </Box>
 
-                <Typography variant="h4">Lighting Design</Typography>
-                <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography>
-                <br />
+                <Box sx={sxHeroContent}>
+                    <Typography variant="h1" sx={sxHeroText}>Lighting Design</Typography>
+                    <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography>
+                </Box>
 
-                <Typography variant="h4">Architecture</Typography>
-                <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography>
-                <br />
+                <Box sx={sxHeroContent}>
+                    <Typography variant="h1" sx={sxHeroText}>Architecture</Typography>
+                    <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography>
+                </Box>
+
+                <Box sx={sxHeroContent}>
+                    <Typography variant="h1" sx={sxHeroText}>Graphic Design</Typography>
+                    <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography>
+                </Box>
+
+                <Box sx={sxHeroContent}>
+                    <Typography variant="h1" sx={sxHeroText}>Sketches</Typography>
+                    <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography>
+                </Box>
 
             </Box>
         </motion.div>
@@ -66,7 +81,7 @@ export default Home;
 
 
 
-    // // BUTTONS to go back to the movie list or to the add movie form; 
+    // // BUTTONS to go back to the movie list or to the add movie form;
     // function handleClick(input, movie) {
 
     //     switch (input) {

@@ -11,6 +11,9 @@ import Typography from '@mui/material/Typography';
 // --- STYLES --- // 
 import {
     sxAboutContainer,
+    sxHeroContent,
+    sxHeroText,
+    sxAboutBody,
     sxButton,
     trans,
 } from '../App/App.style';
@@ -36,22 +39,40 @@ function About() {
             style={trans.style}
             transition={trans.time}
         >
+
+            {/* <Box sx={sxAboutContainer}>
+                <Typography variant="h4">Hey - Hi - Hello - Howdy</Typography>
+            </Box> */}
+
             <Box sx={sxAboutContainer}>
-                <Typography variant="h4">Hello, a little about me:</Typography>
-                
-                <Typography variant="body1">
-                    Living life in between the physical and the digital world, my name is Eric Meinzer and I like to design and build things.
-                </Typography>
 
-                <Typography variant="body1">
-                    My current focus is on software engineering, designing and developing fluid digital products.
-                </Typography>
+                <Box sx={sxHeroContent}>
+                    <Typography variant="h1" sx={sxHeroText}>
+                        Designing Fuels My Inspiration
+                    </Typography>
 
-                <Typography variant="body1">
-                    Thanks for stopping by! CONNECT with me on LinkedIn or GitHub
-                </Typography>
+                    <Typography variant="h1" sx={sxHeroText}>
+                        Building Awards Me Satisfaction
+                    </Typography>
+                </Box>
+
+
+                <Box sx={sxAboutBody}>
+                    <Typography variant="body1">
+                        Living life in between the physical and the digital world, my name is Eric Meinzer and I like to design and build things.
+                    </Typography>
+
+                    <Typography variant="body1">
+                        My current focus is on software engineering, designing and developing fluid digital products.
+                    </Typography>
+
+                    <Typography variant="body1">
+                        Thanks for stopping by! CONNECT with me on LinkedIn or GitHub
+                    </Typography>
+                </Box>
 
             </Box>
+
         </motion.div>
     )
 };
