@@ -55,7 +55,7 @@ function* fetchAllGenres(action) {
 // POST new movie to server, then FETCH all movies;
 function* addMovie(action) {
     console.log('trying to addMovie here', action.paylod);
-    
+
     try {
         yield axios.post('/api/movie', action.payload);
         yield put({ type: 'FETCH_MOVIES' });
@@ -63,6 +63,8 @@ function* addMovie(action) {
         console.log('addMovie error', err);
     }
 }; // addMovie
+
+
 
 
 
@@ -76,7 +78,7 @@ const movies = (state = [], action) => {
         default:
             return state;
     }
-}; // sagaMiddleware
+}; // movies
 
 // Used to store the selected movie genres;
 const genres = (state = [], action) => {
@@ -113,6 +115,16 @@ const selectedMovie = (state = {}, action) => {
     }
 }; // selectedMovie
 
+const pageDirection = (state = [], action) => {
+    switch (action.type) {
+        case 'PAGE_DIRECTION':
+            return action.payload;
+        default:
+            return state;
+    }
+}; // pageDirection
+
+
 // Create sagaMiddleware
 const sagaMiddleware = createSagaMiddleware();
 
@@ -123,6 +135,7 @@ const storeInstance = createStore(
         genres,
         allGenres,
         selectedMovie,
+        pageDirection,
     }),
     // Add sagaMiddleware to our store
     applyMiddleware(sagaMiddleware, logger),

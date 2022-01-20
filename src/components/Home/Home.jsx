@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import axios from 'axios'
@@ -28,21 +28,18 @@ function Home() {
     const history = useHistory();
     const dispatch = useDispatch();
 
+    // const [thing, setThing] = useState('');
+
     const handleClick = (direction) => {
         console.log('--- clicked on an item')
+        console.log('--- direction:', direction);
 
-        // set reducer to each page?
-    
-        switch (direction) {
+        dispatch({ type: 'PAGE_DIRECTION', payload: direction })
+        
+        localStorage.setItem('direction', direction);
 
-            case 'software':
-                console.log('--- direction: software');
-                history.push('/detail')
-
-            default:
-                break;
-                
-        }; // switch
+        history.push('/detail')
+     
     }; // handleClick
 
     return (
@@ -55,27 +52,27 @@ function Home() {
         >
             <Box sx={sxHomeContainer} >
 
-                <Box sx={sxHeroContent} onClick={() => handleClick('software')}>
+                <Box sx={sxHeroContent} onClick={() => handleClick('Software Development')}>
                     <Typography variant="h1" sx={sxHeroText}>Software Development</Typography>
                     {/* <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography> */}
                 </Box>
 
-                <Box sx={sxHeroContent}>
+                <Box sx={sxHeroContent} onClick={() => handleClick('Lighting Design')}>
                     <Typography variant="h1" sx={sxHeroText}>Lighting Design</Typography>
                     {/* <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography> */}
                 </Box>
 
-                <Box sx={sxHeroContent}>
+                <Box sx={sxHeroContent} onClick={() => handleClick('Architecture')}>
                     <Typography variant="h1" sx={sxHeroText}>Architecture</Typography>
                     {/* <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography> */}
                 </Box>
 
-                <Box sx={sxHeroContent}>
+                <Box sx={sxHeroContent} onClick={() => handleClick('Graphic Design')}>
                     <Typography variant="h1" sx={sxHeroText}>Graphic Design</Typography>
                     {/* <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography> */}
                 </Box>
 
-                <Box sx={sxHeroContent}>
+                <Box sx={sxHeroContent} onClick={() => handleClick('Sketches')}>
                     <Typography variant="h1" sx={sxHeroText}>Sketches</Typography>
                     {/* <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography> */}
                 </Box>

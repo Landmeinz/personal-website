@@ -1,5 +1,6 @@
 
 import { HashRouter as Router, Route, Link, Switch, useLocation } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
 
 // --- components --- //
 import Header from '../Header/Header.jsx';
@@ -38,8 +39,6 @@ function App() {
   // const location = useLocation();
   // console.log('this is the location', location.pathname);
 
-  // const detailPage = useSelector(store => store.detailPage);
-
   const hello = ' ----- this is hello';
 
 
@@ -66,7 +65,7 @@ function App() {
                   </Route>
 
                   <Route path="/detail">
-                    <Detail hello={hello}/>
+                    <Detail />
                   </Route>
 
                   <Route path="/about">

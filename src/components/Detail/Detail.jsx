@@ -23,10 +23,18 @@ import {
 import { motion, AnimatePresence } from "framer-motion"
 
 
-function Detail(props) {
+function Detail() {
 
-    // INVENTORY grab ALL the genres from the store;
-    let allGenres = useSelector(store => store.allGenres);
+
+    // console.log('--- localStorage', window.localStorage.getItem('direction'));
+    const localStorage = window.localStorage.getItem('direction');
+
+    useEffect(() => {
+        dispatch({ type: 'PAGE_DIRECTION', payload: localStorage });
+    }, [dispatch]);
+
+    const pageDirection = useSelector(store => store.pageDirection);
+    // const localStorage = useSelector(store => store.localStorage);
 
     const dispatch = useDispatch();
     const history = useHistory();
@@ -49,8 +57,7 @@ function Detail(props) {
 
                 <Box sx={sxAboutHeroContent}>
                     <Typography variant="h1" sx={sxHeroText}>
-                        Details about what you clicked on
-                        {props.hello}
+                        {pageDirection}
                     </Typography>
                 </Box>
 
