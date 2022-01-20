@@ -3,13 +3,6 @@ import { useHistory } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { useState, useEffect } from 'react';
 
-// -- PAGE COMPONENTS -- //
-import SoftwareDevelopment from './SoftwareDevelopment.jsx';
-import LightingDesign from './LightingDesign.jsx';
-import Architecture from './Architecture.jsx';
-import GraphicDesign from './GraphicDesign.jsx';
-import Sketches from './Sketches.jsx';
-
 // --- MUI --- //
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
@@ -30,7 +23,7 @@ import {
 import { motion, AnimatePresence } from "framer-motion"
 
 
-function Detail() {
+function LightingDesign() {
 
 
     // console.log('--- localStorage', window.localStorage.getItem('direction'));
@@ -60,9 +53,9 @@ function Detail() {
                 <Typography variant="h4">Hey - Hi - Hello - Howdy</Typography>
             </Box> */}
 
-            <Box sx={sxAboutContainer}>
+            <Box sx={{textAlign: 'center',}}> LightingDesign
 
-                <Box sx={sxAboutHeroContent}>
+                {/* <Box sx={sxAboutHeroContent}>
                     <Typography variant="h1" sx={sxHeroText}>
                         {pageDirection}
                     </Typography>
@@ -73,22 +66,12 @@ function Detail() {
                     <Typography variant="body1">
                         these are the details I was talking about
                     </Typography>
-
-                    {pageDirection === 'Software Development' ?
-                        <SoftwareDevelopment /> : <></>}
-
-                    {pageDirection === 'Lighting Design' ?
-                        <LightingDesign /> : <></>}
-
-                    {pageDirection === 'Architecture' ?
-                        <Architecture /> : <></>}
-
-                    {pageDirection === 'Graphic Design' ?
-                        <GraphicDesign /> : <></>}
-
-                    {pageDirection === 'Sketches' ?
-                        <Sketches /> : <></>}
-                </Box>
+                    <SoftwareDevelopment />
+                    <LightingDesign />
+                    <Architecture />
+                    <GraphicDesign />
+                    <Sketches />
+                </Box> */}
 
             </Box>
 
@@ -96,4 +79,4 @@ function Detail() {
     )
 };
 
-export default Detail;
+export default LightingDesign;

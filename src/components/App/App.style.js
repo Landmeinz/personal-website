@@ -262,6 +262,7 @@ export const sxAboutContainer = {
     my: 1,
     mx: 'auto',
     width: '90%',
+    minHeight: '94vh',
     borderRadius: 1,
     p: 2,
     gap: 20,
