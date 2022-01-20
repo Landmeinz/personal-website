@@ -63,7 +63,8 @@ export const sxAppContainer = {
     display: 'flex',
     position: 'relative',
     mx: 'auto',
-    mt: 3,
+    // mt: 3,
+    // bgcolor: 'darkblue',
 
     // desktop sizing
     [theme.breakpoints.only('desktop')]: {
@@ -89,7 +90,7 @@ export const sxHeaderContainer = {
     // border: '1px solid red',
     display: 'flex',
     flexDirection: 'column',
-    bgcolor: 'white',
+    // bgcolor: 'white',
     zIndex: 200,
 
     // desktop sizing
@@ -198,6 +199,8 @@ export const sxNavLink = {
 
 
 
+
+
 // --- HOME PAGE --- // 
 
 // box properties that holds our movie title and our image together; 
@@ -211,12 +214,41 @@ export const sxHomeContainer = {
     width: '90%',
     borderRadius: 1,
     p: 2,
+    gap: 4,
 
     color: 'info.main',
-}; // sxCard
+    
+}; 
 
 
+export const sxHeroContent = {
+    // border: '1px solid green',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    textAlign: 'center',
+    width: '100%',
+    gap: 10,
+    mb: 2, 
+    color: 'info.main',
 
+    '&:hover': {
+        transform: 'scale(1.03)',
+        // boxShadow: 4,
+        // borderRadius: 5,
+        cursor: 'pointer',
+        color: 'primary.main',
+        // p: 1,
+        // border: 1,
+        // borderColor: 'primary.main',
+    }
+}
+
+export const sxHeroText = {
+    
+    fontWeight: 500,
+    // color: 'info.main',
+}
 
 
 
@@ -237,7 +269,7 @@ export const sxAboutContainer = {
     color: 'info.main',
 }
 
-export const sxHeroContent = {
+export const sxAboutHeroContent = {
     border: '1px solid green',
     display: 'flex',
     flexDirection: 'column',
@@ -248,11 +280,6 @@ export const sxHeroContent = {
     mb: 2, 
 }
 
-export const sxHeroText = {
-    
-    fontWeight: 500,
-    color: 'info.main',
-}
 
 export const sxAboutBody = {
     border: '1px solid blue',

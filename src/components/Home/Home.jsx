@@ -25,6 +25,26 @@ import { motion, AnimatePresence } from "framer-motion"
 
 function Home() {
 
+    const history = useHistory();
+    const dispatch = useDispatch();
+
+    const handleClick = (direction) => {
+        console.log('--- clicked on an item')
+
+        // set reducer to each page?
+    
+        switch (direction) {
+
+            case 'software':
+                console.log('--- direction: software');
+                history.push('/detail')
+
+            default:
+                break;
+                
+        }; // switch
+    }; // handleClick
+
     return (
         <motion.div
             initial={trans.initial}
@@ -35,29 +55,29 @@ function Home() {
         >
             <Box sx={sxHomeContainer} >
 
-                <Box sx={sxHeroContent}>
+                <Box sx={sxHeroContent} onClick={() => handleClick('software')}>
                     <Typography variant="h1" sx={sxHeroText}>Software Development</Typography>
-                    <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography>
+                    {/* <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography> */}
                 </Box>
 
                 <Box sx={sxHeroContent}>
                     <Typography variant="h1" sx={sxHeroText}>Lighting Design</Typography>
-                    <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography>
+                    {/* <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography> */}
                 </Box>
 
                 <Box sx={sxHeroContent}>
                     <Typography variant="h1" sx={sxHeroText}>Architecture</Typography>
-                    <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography>
+                    {/* <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography> */}
                 </Box>
 
                 <Box sx={sxHeroContent}>
                     <Typography variant="h1" sx={sxHeroText}>Graphic Design</Typography>
-                    <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography>
+                    {/* <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography> */}
                 </Box>
 
                 <Box sx={sxHeroContent}>
                     <Typography variant="h1" sx={sxHeroText}>Sketches</Typography>
-                    <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography>
+                    {/* <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography> */}
                 </Box>
 
             </Box>

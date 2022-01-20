@@ -6,6 +6,7 @@ import Header from '../Header/Header.jsx';
 import NavBar from '../NavBar/NavBar.jsx';
 import Home from '../Home/Home.jsx';
 import About from '../About/About.jsx';
+import Detail from '../Detail/Detail.jsx';
 
 // --- MUI --- //
 import '@fontsource/roboto/300.css';
@@ -37,9 +38,13 @@ function App() {
   // const location = useLocation();
   // console.log('this is the location', location.pathname);
 
+  // const detailPage = useSelector(store => store.detailPage);
+
+  const hello = ' ----- this is hello';
+
 
   return (
-    <Box>
+    <Box sx={{bgcolor: 'lightblue'}}>
 
       <ThemeProvider theme={theme}>
         <Router>
@@ -58,6 +63,10 @@ function App() {
 
                   <Route path="/" exact>
                     <Home />
+                  </Route>
+
+                  <Route path="/detail">
+                    <Detail hello={hello}/>
                   </Route>
 
                   <Route path="/about">

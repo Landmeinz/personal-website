@@ -23,7 +23,7 @@ import {
 import { motion, AnimatePresence } from "framer-motion"
 
 
-function About() {
+function Detail(props) {
 
     // INVENTORY grab ALL the genres from the store;
     let allGenres = useSelector(store => store.allGenres);
@@ -49,26 +49,15 @@ function About() {
 
                 <Box sx={sxAboutHeroContent}>
                     <Typography variant="h1" sx={sxHeroText}>
-                        Designing Fuels My Inspiration
-                    </Typography>
-
-                    <Typography variant="h1" sx={sxHeroText}>
-                        Building Awards Me Satisfaction
+                        Details about what you clicked on
+                        {props.hello}
                     </Typography>
                 </Box>
 
 
                 <Box sx={sxAboutBody}>
                     <Typography variant="body1">
-                        Living life in between the physical and the digital world, my name is Eric Meinzer and I like to design and build things. As you can see from this website I have a lot of interests and a variety of skills. 
-                    </Typography>
-
-                    <Typography variant="body1">
-                        My current focus is on software engineering, designing and developing fluid digital products. I'm utilizing all of the design skills that I've gained over the years along with my experience as a consultant to design and build applications for a variety of clients.
-                    </Typography>
-
-                    <Typography variant="body1">
-                        Thanks for stopping by! CONNECT with me on LinkedIn or GitHub to the left. 
+                        these are the details I was talking about
                     </Typography>
                 </Box>
 
@@ -78,4 +67,4 @@ function About() {
     )
 };
 
-export default About;
+export default Detail;
