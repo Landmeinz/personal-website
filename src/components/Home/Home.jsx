@@ -17,6 +17,8 @@ import {
     trans,
     sxHeroContent,
     sxHeroText,
+    sxSubText,
+    sxSubTextBold,
 } from '../App/App.style';
 
 // --- PAGE ANIMATIONS FRAMER MOTION --- //
@@ -35,11 +37,11 @@ function Home() {
         console.log('--- direction:', direction);
 
         dispatch({ type: 'PAGE_DIRECTION', payload: direction })
-        
+
         localStorage.setItem('direction', direction);
 
         history.push('/detail')
-     
+
     }; // handleClick
 
     return (
@@ -51,6 +53,15 @@ function Home() {
             transition={trans.time}
         >
             <Box sx={sxHomeContainer} >
+
+                <Box sx={{display: 'flex', flexDirection: 'column', gap: 4}}>
+
+                    <Typography variant="h2" sx={sxSubTextBold}>That's a feature, not a bug.</Typography>
+
+                    <Typography variant="h4" sx={sxSubText}>As you can see I have a lot of different interests and skills.</Typography>
+
+                    <Typography variant="h4" sx={sxSubText}>Currently I'm focusing on building intuitive digital products.</Typography>
+                </Box>
 
                 <Box sx={sxHeroContent} onClick={() => handleClick('Software Development')}>
                     <Typography variant="h1" sx={sxHeroText}>Software Development</Typography>

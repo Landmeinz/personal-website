@@ -70,10 +70,7 @@ function Detail() {
 
 
                 <Box sx={sxAboutBody}>
-                    <Typography variant="body1">
-                        these are the details I was talking about
-                    </Typography>
-
+                    
                     {pageDirection === 'Software Development' ?
                         <SoftwareDevelopment /> : <></>}
 

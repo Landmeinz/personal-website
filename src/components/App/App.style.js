@@ -250,6 +250,16 @@ export const sxHeroText = {
     // color: 'info.main',
 }
 
+export const sxSubText = {
+    fontWeight: 300,
+    textAlign: 'center',
+}
+
+export const sxSubTextBold = {
+    fontWeight: 500,
+    textAlign: 'center',
+}
+
 
 
 // --- ABOUT PAGE --- //
@@ -265,7 +275,7 @@ export const sxAboutContainer = {
     minHeight: '94vh',
     borderRadius: 1,
     p: 2,
-    gap: 20,
+    gap: 10,
 
     color: 'info.main',
 }
