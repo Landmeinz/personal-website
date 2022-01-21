@@ -40,7 +40,8 @@ function Home() {
 
         localStorage.setItem('direction', direction);
 
-        history.push('/detail')
+        history.push('/detail');
+        window.scrollTo({top: 0, behavior: 'smooth'});
 
     }; // handleClick
 

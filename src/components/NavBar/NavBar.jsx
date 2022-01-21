@@ -32,11 +32,13 @@ function NavBar() {
             case 'home':
                 console.log('CLICKED on the home button');
                 history.push('/')
+                window.scrollTo({top: 0, behavior: 'smooth'});
                 break;
 
             case 'about':
                 console.log('CLICKED on the about button');
                 history.push('/about')
+                window.scrollTo({top: 0, behavior: 'smooth'});
                 break;
 
             case 'github':
