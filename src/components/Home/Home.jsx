@@ -24,6 +24,9 @@ import {
 // --- PAGE ANIMATIONS FRAMER MOTION --- //
 import { motion, AnimatePresence } from "framer-motion"
 
+// --- PARALLAX --- // 
+import { Parallax, Background } from 'react-parallax';
+
 
 function Home() {
 
@@ -41,9 +44,13 @@ function Home() {
         localStorage.setItem('direction', direction);
 
         history.push('/detail');
-        window.scrollTo({top: 0, behavior: 'smooth'});
+        window.scrollTo({ top: 0, behavior: 'smooth' });
 
     }; // handleClick
+
+    // <Background className="custom-bg">
+    //     <img src="http://www.fillmurray.com/500/320" alt="fill murray" />
+    // </Background>
 
     return (
         <motion.div
@@ -53,43 +60,61 @@ function Home() {
             style={trans.style}
             transition={trans.time}
         >
-            <Box sx={sxHomeContainer} >
+            <Parallax 
+                // bgImage="images/eric.jpg"
+                blur={10}
+                renderLayer={percentage => (
+                    <Box sx={{
+                        // border: '1px solid red',
+                        position: 'absolute',
+                        background: `hsla(250, 20%, 70%, ${percentage * 1})`,
+                        left: '10%',
+                        top: '10%',
+                        width: percentage * 600,
+                        height: percentage * 500,
+                    }}
+                    >
+                    </Box>
+                )}
+            >
+                <Box sx={sxHomeContainer} >
 
-                <Box sx={{display: 'flex', flexDirection: 'column', gap: 1}}>
+                    <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
 
-                    <Typography variant="h2" sx={sxSubTextBold}>That's a feature, not a bug.</Typography>
+                        <Typography variant="h2" sx={sxSubTextBold}>That's a feature, not a bug.</Typography>
 
-                    <Typography variant="h4" sx={sxSubText}>As you can see I have a lot of different interests and skills.</Typography>
+                        <Typography variant="h4" sx={sxSubText}>As you can see I have a lot of different interests and skills.</Typography>
 
-                    <Typography variant="h4" sx={sxSubText}>Currently I'm focusing on building intuitive digital products.</Typography>
+                        <Typography variant="h4" sx={sxSubText}>Currently I'm focusing on building intuitive digital products.</Typography>
+                    </Box>
+
+                    <Box sx={sxHeroContent} onClick={() => handleClick('Software Development')}>
+                        <Typography variant="h1" sx={sxHeroText}>Software Development</Typography>
+                        {/* <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography> */}
+                    </Box>
+
+                    <Box sx={sxHeroContent} onClick={() => handleClick('Lighting Design')}>
+                        <Typography variant="h1" sx={sxHeroText}>Lighting Design</Typography>
+                        {/* <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography> */}
+                    </Box>
+
+                    <Box sx={sxHeroContent} onClick={() => handleClick('Architecture')}>
+                        <Typography variant="h1" sx={sxHeroText}>Architecture</Typography>
+                        {/* <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography> */}
+                    </Box>
+
+                    <Box sx={sxHeroContent} onClick={() => handleClick('Graphic Design')}>
+                        <Typography variant="h1" sx={sxHeroText}>Graphic Design</Typography>
+                        {/* <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography> */}
+                    </Box>
+
+                    <Box sx={sxHeroContent} onClick={() => handleClick('Sketches')}>
+                        <Typography variant="h1" sx={sxHeroText}>Sketches</Typography>
+                        {/* <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography> */}
+                    </Box>
+
                 </Box>
-
-                <Box sx={sxHeroContent} onClick={() => handleClick('Software Development')}>
-                    <Typography variant="h1" sx={sxHeroText}>Software Development</Typography>
-                    {/* <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography> */}
-                </Box>
-
-                <Box sx={sxHeroContent} onClick={() => handleClick('Lighting Design')}>
-                    <Typography variant="h1" sx={sxHeroText}>Lighting Design</Typography>
-                    {/* <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography> */}
-                </Box>
-
-                <Box sx={sxHeroContent} onClick={() => handleClick('Architecture')}>
-                    <Typography variant="h1" sx={sxHeroText}>Architecture</Typography>
-                    {/* <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography> */}
-                </Box>
-
-                <Box sx={sxHeroContent} onClick={() => handleClick('Graphic Design')}>
-                    <Typography variant="h1" sx={sxHeroText}>Graphic Design</Typography>
-                    {/* <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography> */}
-                </Box>
-
-                <Box sx={sxHeroContent} onClick={() => handleClick('Sketches')}>
-                    <Typography variant="h1" sx={sxHeroText}>Sketches</Typography>
-                    {/* <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography> */}
-                </Box>
-
-            </Box>
+            </Parallax>
         </motion.div>
     );
 }

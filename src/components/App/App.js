@@ -31,6 +31,9 @@ import {
 // import { AnimatePresence } from "framer-motion"
 import { motion, AnimatePresence } from "framer-motion"
 
+// --- PARALLAX --- // 
+import { Parallax, Background } from 'react-parallax';
+
 
 
 function App() {
@@ -43,45 +46,62 @@ function App() {
 
 
   return (
-    <Box sx={{bgcolor: 'lightblue'}}>
-
-      <ThemeProvider theme={theme}>
-        <Router>
-
-          <Box sx={sxAppContainer}>
-
-            <Box sx={sxHeaderContainer}>
-              <Header />
-              <NavBar />
-            </Box>
-
-            <Box sx={sxBodyContainer}>
-
-              <AnimatePresence exitBeforeEnter initial={true}>
-                <Switch>
-
-                  <Route path="/" exact>
-                    <Home />
-                  </Route>
-
-                  <Route path="/detail">
-                    <Detail />
-                  </Route>
-
-                  <Route path="/about">
-                    <About />
-                  </Route>
-
-                </Switch>
-              </AnimatePresence>
-
-            </Box>
-
+    <Box sx={{ bgcolor: 'lightblue' }}>
+      <Parallax
+        bgImage="images/eric.jpg"
+        // blur={10}
+        renderLayer={percentage => (
+          <Box sx={{
+            position: 'absolute',
+            background: `hsla(210, 20%, 70%, ${percentage * 1})`,
+            left: '1%',
+            top: '1%',
+            width: percentage * 600,
+            height: percentage * 500,
+          }}
+          >
           </Box>
+        )}
+      >
 
-        </Router>
-      </ThemeProvider>
+        <ThemeProvider theme={theme}>
+          <Router>
 
+            <Box sx={sxAppContainer}>
+
+              <Box sx={sxHeaderContainer}>
+                <Header />
+                <NavBar />
+              </Box>
+
+              <Box sx={sxBodyContainer}>
+
+                <AnimatePresence exitBeforeEnter initial={true}>
+                  <Switch>
+
+                    <Route path="/" exact>
+                      <Home />
+                    </Route>
+
+                    <Route path="/detail">
+                      <Detail />
+                    </Route>
+
+                    <Route path="/about">
+                      <About />
+                    </Route>
+
+                  </Switch>
+                </AnimatePresence>
+
+              </Box>
+
+            </Box>
+
+          </Router>
+        </ThemeProvider>
+
+      </Parallax>
     </Box>
   );
 }
