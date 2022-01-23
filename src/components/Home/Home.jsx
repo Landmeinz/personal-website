@@ -55,7 +55,7 @@ function Home() {
         >
             <Box sx={sxHomeContainer} >
 
-                <Box sx={{display: 'flex', flexDirection: 'column', gap: 4}}>
+                <Box sx={{display: 'flex', flexDirection: 'column', gap: 1}}>
 
                     <Typography variant="h2" sx={sxSubTextBold}>That's a feature, not a bug.</Typography>
 
