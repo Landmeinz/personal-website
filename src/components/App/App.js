@@ -46,33 +46,50 @@ function App() {
 
 
   return (
-    <Box sx={{ bgcolor: 'lightblue' }}>
-      <Parallax
-        bgImage="images/eric.jpg"
-        // blur={10}
-        renderLayer={percentage => (
-          <Box sx={{
-            position: 'absolute',
-            background: `hsla(210, 20%, 70%, ${percentage * 1})`,
-            left: '1%',
-            top: '1%',
-            width: percentage * 600,
-            height: percentage * 500,
-          }}
-          >
-          </Box>
-        )}
-      >
+    <Box sx={{ bgcolor: 'lightblue', height: 'auto', }}>
 
-        <ThemeProvider theme={theme}>
-          <Router>
+      {/* <Background>
+          <Box sx={{bgImage: "images/hex.jpeg"}}></Box>
+        </Background> */}
+
+      <ThemeProvider theme={theme}>
+        <Router>
+
+          <Box sx={sxHeaderContainer}>
+            <Header />
+            <NavBar />
+          </Box>
+          
+          <Parallax
+            bgImage="images/hex.jpeg"
+            bgImageStyle={{
+              // backgroundRepeat: 'repeat-y',
+              height: 'auto',
+              width: '100%',
+              // border: '5px solid yellow',
+              backgroundPosition: 'center',
+              // opacity: .5,
+            }}
+
+            blur={{ min: -20, max: 15 }}
+            strength={100}
+
+            renderLayer={percentage => (
+              <Box sx={{
+                // border: '2px solid green',
+                position: 'absolute',
+                background: `hsla(210, 20%, 70%, ${percentage * 1})`,
+                left: '1%',
+                top: '1%',
+                width: percentage * 800,
+                height: percentage * 500,
+              }}
+              >
+              </Box>
+            )}
+          >
 
             <Box sx={sxAppContainer}>
-
-              <Box sx={sxHeaderContainer}>
-                <Header />
-                <NavBar />
-              </Box>
 
               <Box sx={sxBodyContainer}>
 
@@ -97,11 +114,9 @@ function App() {
               </Box>
 
             </Box>
-
-          </Router>
-        </ThemeProvider>
-
-      </Parallax>
+          </Parallax>
+        </Router>
+      </ThemeProvider>
     </Box>
   );
 }

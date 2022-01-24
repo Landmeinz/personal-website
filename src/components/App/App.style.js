@@ -9,9 +9,9 @@
 // --- ANIMATIONS --- //
 
 export const trans = {
-    time:       { duration: .35 },
-    initial:    { rotate: -20, x: -600, opacity: -1.5 },
-    animate:    { rotate: 0, x: 10, opacity: 1 },
+    time: { duration: .35 },
+    initial: { rotate: -20, x: -600, opacity: -1.5 },
+    animate: { rotate: 0, x: 10, opacity: 1 },
     // exit:       { rotate: -30 },
 }
 
@@ -59,27 +59,32 @@ export const sxType = {
 export const sxAppContainer = {
 
     // shared properties
-    // border: '1px solid red',
+    // border: '2px solid blue',
     display: 'flex',
     position: 'relative',
     mx: 'auto',
+    height: 'auto',
+    flexDirection: 'column',
+    alignItems: 'center',
+    minWidth: 380,
+    maxWidth: '95%',
     // mt: 3,
     // bgcolor: 'darkblue',
 
     // desktop sizing
-    [theme.breakpoints.only('desktop')]: {
-        flexDirection: 'row',
-        justifyContent: 'center',
-        minWidth: 750,
-        maxWidth: '85%',
-    },
+    // [theme.breakpoints.only('desktop')]: {
+    //     flexDirection: 'row',
+    //     justifyContent: 'center',
+    //     minWidth: 750,
+    //     maxWidth: '85%',
+    // },
     // mobile sizing
-    [theme.breakpoints.only('mobile')]: {
-        flexDirection: 'column',
-        alignItems: 'center',
-        minWidth: 380,
-        maxWidth: '95%',
-    },
+    //     [theme.breakpoints.only('mobile')]: {
+    //         flexDirection: 'column',
+    //         alignItems: 'center',
+    //         minWidth: 380,
+    //         maxWidth: '95%',
+    //     },
 }
 
 
@@ -87,26 +92,40 @@ export const sxAppContainer = {
 export const sxHeaderContainer = {
 
     // shared properties
-    // border: '1px solid red',
+    // border: '1px solid green',
     display: 'flex',
-    flexDirection: 'column',
-    // bgcolor: 'white',
-    zIndex: 200,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 4,
+    bgcolor: 'lightblue',
+    py: 1,
 
-    // desktop sizing
-    [theme.breakpoints.only('desktop')]: {
-        position: 'sticky',
-        top: 30,
-        height: '100%',
-        width: 300,
-    },
+    position: 'sticky',
+    top: 0,
+    zIndex: 1000,
 
-    // mobile sizing
-    [theme.breakpoints.only('mobile')]: {
-        position: 'static',
-        height: '100%',
-        width: '100%',
-    },
+    // height: 100,
+    // zIndex: 1000,
+    // boxShadow: 3,
+    // width: '100%',
+    // borderBottom: '1px solid gray',
+
+
+    // // desktop sizing
+    // [theme.breakpoints.only('desktop')]: {
+    //     position: 'sticky',
+    //     top: 30,
+    //     height: '100%',
+    //     width: 300,
+    // },
+
+    // // mobile sizing
+    // [theme.breakpoints.only('mobile')]: {
+    //     position: 'static',
+    //     height: '100%',
+    //     width: '100%',
+    // },
 }
 
 export const sxBodyContainer = {
@@ -129,24 +148,25 @@ export const sxBodyContainer = {
 // box that contains the header; not sure why i took it out of the h1 tag; 
 export const sxHeader = {
     // border: '1px solid gray',
-    fontSize: 38,
+    fontSize: 42,
     fontWeight: 700,
     lineHeight: .9,
     textAlign: 'center',
     color: 'primary.main',
+    cursor: 'pointer',
 }
 
 export const sxProfilePhoto = {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderRadius: '50%',
-    height: 145,
-    width: 145,
-    mx: 'auto',
-    mt: 2,
-    mb: 3,
-    boxSdow: 3,
+    // display: 'flex',
+    // justifyContent: 'center',
+    // alignItems: 'center',
+    // borderRadius: '50%',
+    // height: 145,
+    // width: 145,
+    // mx: 'auto',
+    // mt: 2,
+    // mb: 3,
+    // boxSdow: 3,
 }
 
 
@@ -156,21 +176,24 @@ export const sxButtonBox = {
 
     // shared properties
     // border: '1px solid blue',
-    display: 'flex',
-    alignItems: 'center',
-    gap: 1,
-    mb: 1,
 
-    // desktop sizing
-    [theme.breakpoints.only('desktop')]: {
-        flexDirection: 'column',
-        alignItems: 'center',
-    },
-    // mobile sizing
-    [theme.breakpoints.only('mobile')]: {
-        flexDirection: 'row',
-        justifyContent: 'center',
-    },
+    display: 'flex',
+    flexDirection: 'row',
+    gap: 1,
+
+    // justifyContent: 'center',
+    // alignItems: 'center',
+    
+    // // desktop sizing
+    // [theme.breakpoints.only('desktop')]: {
+    //     flexDirection: 'column',
+    //     alignItems: 'center',
+    // },
+    // // mobile sizing
+    // [theme.breakpoints.only('mobile')]: {
+    //     flexDirection: 'row',
+    //     justifyContent: 'center',
+    // },
 }
 
 export const sxNavLink = {
@@ -180,18 +203,17 @@ export const sxNavLink = {
     alignItems: 'center',
     // border: 1,
     // borderColor: 'secondary.main',
-    height: 55,
-    width: 55,
+    height: 50,
+    width: 50,
     borderRadius: '50%',
     cursor: 'pointer',
     boxShadow: 2,
     color: 'primary.main',
+    bgcolor: 'lightblue',
 
     '&:hover': {
-        transform: 'scale(1.1)',
+        transform: 'scale(1.05)',
         boxShadow: 4,
-        border: 1,
-        borderColor: 'primary.main',
     }
 }
 
@@ -217,8 +239,8 @@ export const sxHomeContainer = {
     gap: 4,
 
     color: 'info.main',
-    
-}; 
+
+};
 
 
 export const sxHeroContent = {
@@ -229,7 +251,7 @@ export const sxHeroContent = {
     textAlign: 'center',
     width: '100%',
     gap: 10,
-    mb: 2, 
+    mb: 2,
     color: 'info.main',
 
     '&:hover': {
@@ -245,7 +267,7 @@ export const sxHeroContent = {
 }
 
 export const sxHeroText = {
-    
+
     fontWeight: 500,
     // color: 'info.main',
 }
@@ -265,7 +287,7 @@ export const sxSubTextBold = {
 // --- ABOUT PAGE --- //
 
 export const sxAboutContainer = {
-    border: '1px solid red',
+    // border: '1px solid red',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -281,26 +303,26 @@ export const sxAboutContainer = {
 }
 
 export const sxAboutHeroContent = {
-    border: '1px solid green',
+    // border: '1px solid green',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
     textAlign: 'center',
     width: '100%',
     gap: 10,
-    mb: 2, 
+    mb: 2,
 }
 
 
 export const sxAboutBody = {
-    border: '1px solid blue',
+    // border: '1px solid blue',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
     textAlign: 'left',
     width: '100%',
     gap: 10,
-    mb: 2, 
+    mb: 2,
 }
 
 

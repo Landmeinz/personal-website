@@ -14,23 +14,27 @@ import {
 } from '../App/App.style';
 
 
+// onClick={() => history.push('/')} sx={{cursor: 'pointer'}
+
 function Header() {
 
     const history = useHistory();
 
     return (
-        <Box onClick={() => history.push('/')} sx={{cursor: 'pointer'}}>
+        <Box >
 
-            <Typography sx={sxHeader}>ERIC MEINZER</Typography>
+            <Tooltip title="That's Me!" placement="bottom" >
+                <Typography onClick={() => history.push('/')} sx={sxHeader}>ERIC MEINZER</Typography>
+            </Tooltip>
 
-            <Tooltip title="That's Me!" placement="left">
+            {/* <Tooltip title="That's Me!" placement="bottom">
                 <CardMedia sx={sxProfilePhoto}
                     component="img"
                     image="images/eric.jpg"
                     alt="super handsome photo of Eric"
                 />
-            </Tooltip>
-        </Box>
+    </Tooltip> */}
+        </Box >
     )
 }; // Header
 
