@@ -10,6 +10,7 @@ import axios from 'axios'
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 
 // --- STYLES --- // 
 import {
@@ -19,6 +20,7 @@ import {
     sxHeroText,
     sxSubText,
     sxSubTextBold,
+    sxSubTextBoldHeader,
 } from '../App/App.style';
 
 // --- PAGE ANIMATIONS FRAMER MOTION --- //
@@ -29,6 +31,16 @@ import { Parallax, Background } from 'react-parallax';
 
 
 function Home() {
+
+    const [softwareDescriptionStatus, setSoftwareDescriptionStatus] = useState(false)
+    const [lightingDescriptionStatus, setLightingDescriptionStatus] = useState(false)
+    const [architectureDescriptionStatus, setArchitectureDescriptionStatus] = useState(false)
+    const [graphicDescriptionStatus, setGraphicDescriptionStatus] = useState(false)
+    const [sketchesDescriptionStatus, setSketchesDescriptionStatus] = useState(false)
+
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, [window]);
 
     const history = useHistory();
     const dispatch = useDispatch();
@@ -60,20 +72,24 @@ function Home() {
             style={trans.style}
             transition={trans.time}
         >
-            <Parallax 
+            <Parallax
                 // bgImage="images/eric.jpg"
                 blur={10}
                 renderLayer={percentage => (
                     <Box sx={{
                         // border: '1px solid red',
-                        position: 'absolute',
-                        background: `hsla(250, 20%, 70%, ${percentage * 1})`,
-                        left: '10%',
-                        top: '10%',
-                        width: percentage * 600,
-                        height: percentage * 500,
+                        position: 'fixed',
+                        // background: `hsla(250, 20%, 50%, ${percentage * 1})`,
+                        opacity: .95 / percentage,
+                        bgcolor: 'secondary.main',
+                        left: percentage * 80,
+                        top: percentage * 185,
+                        width: 1400 / percentage,
+                        height: percentage * 300,
                     }}
                     >
+
+
                     </Box>
                 )}
             >
@@ -81,36 +97,71 @@ function Home() {
 
                     <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
 
-                        <Typography variant="h2" sx={sxSubTextBold}>That's a feature, not a bug.</Typography>
+                        <Typography variant="h2" sx={sxSubTextBoldHeader}>That's a feature, not a bug.</Typography>
 
-                        <Typography variant="h4" sx={sxSubText}>As you can see I have a lot of different interests and skills.</Typography>
+                        <Typography variant="h4" sx={sxSubText}>As you are about to see, I have a lot of different interests and skills.</Typography>
 
-                        <Typography variant="h4" sx={sxSubText}>Currently I'm focusing on building intuitive digital products.</Typography>
+                        <Typography variant="h4" sx={sxSubTextBold}>Currently I'm focusing on building intuitive digital products.</Typography>
+
+                        <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 8 }}>
+                            <KeyboardDoubleArrowDownIcon />
+                            <Typography variant="h4" sx={sxSubText}>
+                                Let me show you around
+                            </Typography>
+                            <KeyboardDoubleArrowDownIcon />
+                        </Box>
+
                     </Box>
 
-                    <Box sx={sxHeroContent} onClick={() => handleClick('Software Development')}>
-                        <Typography variant="h1" sx={sxHeroText}>Software Development</Typography>
-                        {/* <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography> */}
+                    <Box sx={sxHeroContent} >
+
+                        <Typography variant="h1" sx={sxHeroText} onClick={() => setSoftwareDescriptionStatus(!softwareDescriptionStatus)}>Software Development</Typography>
+
+                        {softwareDescriptionStatus &&
+                            <Box>
+                                <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography>
+                            </Box>
+                        }
                     </Box>
 
-                    <Box sx={sxHeroContent} onClick={() => handleClick('Lighting Design')}>
+
+
+
+
+
+
+                    <Box sx={sxHeroContent} onClick={() => setLightingDescriptionStatus(!lightingDescriptionStatus)}>
                         <Typography variant="h1" sx={sxHeroText}>Lighting Design</Typography>
-                        {/* <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography> */}
+
+                        {lightingDescriptionStatus &&
+                            <Box>
+                                <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography>
+                            </Box>}
                     </Box>
 
-                    <Box sx={sxHeroContent} onClick={() => handleClick('Architecture')}>
+                    <Box sx={sxHeroContent} onClick={() => setArchitectureDescriptionStatus(!architectureDescriptionStatus)}>
                         <Typography variant="h1" sx={sxHeroText}>Architecture</Typography>
-                        {/* <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography> */}
+
+                        {architectureDescriptionStatus &&
+                            <Box>
+                                <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography>
+                            </Box>}
                     </Box>
 
-                    <Box sx={sxHeroContent} onClick={() => handleClick('Graphic Design')}>
+                    <Box sx={sxHeroContent} onClick={() => setGraphicDescriptionStatus(!graphicDescriptionStatus)}>
                         <Typography variant="h1" sx={sxHeroText}>Graphic Design</Typography>
-                        {/* <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography> */}
+                        {graphicDescriptionStatus &&
+                            <Box>
+                                <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography>
+                            </Box>}
                     </Box>
 
-                    <Box sx={sxHeroContent} onClick={() => handleClick('Sketches')}>
+                    <Box sx={sxHeroContent} onClick={() => setSketchesDescriptionStatus(!sketchesDescriptionStatus)}>
                         <Typography variant="h1" sx={sxHeroText}>Sketches</Typography>
-                        {/* <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography> */}
+                        {sketchesDescriptionStatus &&
+                            <Box>
+                                <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography>
+                            </Box>}
                     </Box>
 
                 </Box>

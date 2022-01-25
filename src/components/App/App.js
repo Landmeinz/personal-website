@@ -59,15 +59,15 @@ function App() {
             <Header />
             <NavBar />
           </Box>
-          
+{/* 
           <Parallax
-            bgImage="images/hex.jpeg"
+            // bgImage="images/hex.jpeg"
             bgImageStyle={{
               // backgroundRepeat: 'repeat-y',
-              height: 'auto',
-              width: '100%',
+              // height: 'auto',
+              // width: '100%',
               // border: '5px solid yellow',
-              backgroundPosition: 'center',
+              // backgroundPosition: 'center',
               // opacity: .5,
             }}
 
@@ -87,7 +87,7 @@ function App() {
               >
               </Box>
             )}
-          >
+          > */}
 
             <Box sx={sxAppContainer}>
 
@@ -114,7 +114,7 @@ function App() {
               </Box>
 
             </Box>
-          </Parallax>
+          {/* </Parallax> */}
         </Router>
       </ThemeProvider>
     </Box>

@@ -9,9 +9,9 @@
 // --- ANIMATIONS --- //
 
 export const trans = {
-    time: { duration: .35 },
-    initial: { rotate: -20, x: -600, opacity: -1.5 },
-    animate: { rotate: 0, x: 10, opacity: 1 },
+    time: { duration: .45 },
+    initial: { rotate: 0, y: 0, opacity: 0 },
+    animate: { rotate: 0, y: 0, opacity: 1 },
     // exit:       { rotate: -30 },
 }
 
@@ -105,9 +105,12 @@ export const sxHeaderContainer = {
     top: 0,
     zIndex: 1000,
 
+    boxShadow: 8,
+
     // height: 100,
     // zIndex: 1000,
-    // boxShadow: 3,
+
+    // borderRadius: 2,
     // width: '100%',
     // borderBottom: '1px solid gray',
 
@@ -183,7 +186,7 @@ export const sxButtonBox = {
 
     // justifyContent: 'center',
     // alignItems: 'center',
-    
+
     // // desktop sizing
     // [theme.breakpoints.only('desktop')]: {
     //     flexDirection: 'column',
@@ -236,7 +239,7 @@ export const sxHomeContainer = {
     width: '90%',
     borderRadius: 1,
     p: 2,
-    gap: 4,
+    gap: 100,
 
     color: 'info.main',
 
@@ -253,7 +256,15 @@ export const sxHeroContent = {
     gap: 10,
     mb: 2,
     color: 'info.main',
+    // bgcolor: 'lightblue',
+    // boxShadow: 4,
 
+}
+
+export const sxHeroText = {
+
+    fontWeight: 500,
+    // color: 'info.main',
     '&:hover': {
         transform: 'scale(1.03)',
         // boxShadow: 4,
@@ -266,15 +277,15 @@ export const sxHeroContent = {
     }
 }
 
-export const sxHeroText = {
-
-    fontWeight: 500,
-    // color: 'info.main',
-}
-
 export const sxSubText = {
     fontWeight: 300,
     textAlign: 'center',
+}
+
+export const sxSubTextBoldHeader = {
+    fontWeight: 500,
+    textAlign: 'center',
+    mb: 6,
 }
 
 export const sxSubTextBold = {
