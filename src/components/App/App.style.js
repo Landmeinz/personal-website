@@ -247,15 +247,20 @@ export const sxHomeContainer = {
 
 
 export const sxHeroContent = {
-    // border: '1px solid green',
+    // border: '1px solid gray',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
     textAlign: 'center',
-    width: '100%',
+    width: '80%',
     gap: 10,
     mb: 2,
     color: 'info.main',
+    borderRadius: 2,
+    p: 2,
+    boxShadow: 8,
+    bgcolor: 'lightblue',
+    opacity: '.95',
     // bgcolor: 'lightblue',
     // boxShadow: 4,
 
@@ -285,7 +290,7 @@ export const sxSubText = {
 export const sxSubTextBoldHeader = {
     fontWeight: 500,
     textAlign: 'center',
-    mb: 6,
+    // mb: 6,
 }
 
 export const sxSubTextBold = {

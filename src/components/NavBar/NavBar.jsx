@@ -11,6 +11,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Tooltip from '@mui/material/Tooltip';
 import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
+import NatureIcon from '@mui/icons-material/Nature';
 
 
 // --- STYLES --- // 
@@ -71,7 +72,7 @@ function NavBar() {
 
             <Tooltip title="Home" placement="top">
                 <Box sx={sxNavLink} onClick={() => handleClick('home')}>
-                    <CottageIcon fontSize='large' />
+                    <NatureIcon fontSize='large' />
                 </Box>
             </Tooltip>
 

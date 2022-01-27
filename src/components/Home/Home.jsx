@@ -74,34 +74,61 @@ function Home() {
         >
             <Parallax
                 // bgImage="images/eric.jpg"
-                blur={10}
+                blur={5}
+                strength={-200}
                 renderLayer={percentage => (
-                    <Box sx={{
-                        // border: '1px solid red',
-                        position: 'fixed',
-                        // background: `hsla(250, 20%, 50%, ${percentage * 1})`,
-                        opacity: .95 / percentage,
-                        bgcolor: 'secondary.main',
-                        left: percentage * 80,
-                        top: percentage * 185,
-                        width: 1400 / percentage,
-                        height: percentage * 300,
-                    }}
-                    >
-
-
-                    </Box>
+                    <>
+                        <Box sx={{
+                            // border: '1px solid red',
+                            position: 'fixed',
+                            // background: `hsla(250, 20%, 50%, ${percentage * 1})`,
+                            opacity: 1 / percentage,
+                            bgcolor: 'secondary.main',
+                            left: percentage * 70,
+                            top: percentage * 250,
+                            width: 1400 / percentage,
+                            height: percentage * 300,
+                            borderRadius: 2,
+                            // boxShadow: 'inset 2px 2px 2px white',
+                        }}
+                        >
+                        </Box>
+                        {/* <Box sx={{
+                            // border: '1px solid red',
+                            position: 'fixed',
+                            // background: `hsla(250, 20%, 50%, ${percentage * 1})`,
+                            opacity: 1 / percentage,
+                            bgcolor: 'secondary.main',
+                            right: 450 / percentage,
+                            top: percentage * 450,
+                            width: 400 / percentage,
+                            height: percentage * 200,
+                            borderRadius: 2,
+                            // boxShadow: 'inset 2px 2px 2px white',
+                        }}
+                        >
+                        </Box> */}
+                    </>
                 )}
             >
                 <Box sx={sxHomeContainer} >
 
-                    <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
+                    <Box sx={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
 
-                        <Typography variant="h2" sx={sxSubTextBoldHeader}>That's a feature, not a bug.</Typography>
+                        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 8, mt: 8 }}>
 
-                        <Typography variant="h4" sx={sxSubText}>As you are about to see, I have a lot of different interests and skills.</Typography>
+                            <Typography variant="h2" sx={sxSubTextBoldHeader}>That's a feature, not a bug.</Typography>
 
-                        <Typography variant="h4" sx={sxSubTextBold}>Currently I'm focusing on building intuitive digital products.</Typography>
+                            <Box>
+                                <Typography variant="h4" sx={sxSubText}>As you are about to see, I have a lot of different interests and skills.</Typography>
+
+                                <br />
+
+                                <Typography variant="h4" sx={sxSubTextBold}>Currently I'm focusing on building intuitive digital products.</Typography>
+                            </Box>
+
+                        </Box>
+
 
                         <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 8 }}>
                             <KeyboardDoubleArrowDownIcon />
@@ -113,6 +140,8 @@ function Home() {
 
                     </Box>
 
+
+                    {/* SOFTWARE DEVELOPMENT */}
                     <Box sx={sxHeroContent} >
 
                         <Typography variant="h1" sx={sxHeroText} onClick={() => setSoftwareDescriptionStatus(!softwareDescriptionStatus)}>Software Development</Typography>
@@ -120,16 +149,15 @@ function Home() {
                         {softwareDescriptionStatus &&
                             <Box>
                                 <Typography variant="body1">This section will be about myself any some cool details that makes me great.</Typography>
-                            </Box>
-                        }
+
+                                <Box>
+                                    hello
+                                </Box>
+                            </Box>}
                     </Box>
 
 
-
-
-
-
-
+                    {/* LIGHTING DESIGN */}
                     <Box sx={sxHeroContent} onClick={() => setLightingDescriptionStatus(!lightingDescriptionStatus)}>
                         <Typography variant="h1" sx={sxHeroText}>Lighting Design</Typography>
 
@@ -139,6 +167,7 @@ function Home() {
                             </Box>}
                     </Box>
 
+                    {/* ARCHITECTURE */}
                     <Box sx={sxHeroContent} onClick={() => setArchitectureDescriptionStatus(!architectureDescriptionStatus)}>
                         <Typography variant="h1" sx={sxHeroText}>Architecture</Typography>
 
@@ -148,6 +177,7 @@ function Home() {
                             </Box>}
                     </Box>
 
+                    {/* GRAPHIC DESIGN */}
                     <Box sx={sxHeroContent} onClick={() => setGraphicDescriptionStatus(!graphicDescriptionStatus)}>
                         <Typography variant="h1" sx={sxHeroText}>Graphic Design</Typography>
                         {graphicDescriptionStatus &&
@@ -156,6 +186,7 @@ function Home() {
                             </Box>}
                     </Box>
 
+                    {/* SKETCHES */}
                     <Box sx={sxHeroContent} onClick={() => setSketchesDescriptionStatus(!sketchesDescriptionStatus)}>
                         <Typography variant="h1" sx={sxHeroText}>Sketches</Typography>
                         {sketchesDescriptionStatus &&
