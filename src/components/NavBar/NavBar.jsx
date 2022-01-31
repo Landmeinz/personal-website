@@ -68,9 +68,9 @@ function NavBar() {
 
 
     return (
-        <Box sx={sxButtonBox}>
+        <Box sx={sxButtonBox}> Links
 
-            <Tooltip title="Home" placement="top">
+            {/* <Tooltip title="Home" placement="top">
                 <Box sx={sxNavLink} onClick={() => handleClick('home')}>
                     <NatureIcon fontSize='large' />
                 </Box>
@@ -80,7 +80,7 @@ function NavBar() {
                 <Box sx={sxNavLink} onClick={() => handleClick('about')}>
                     <HelpIcon fontSize='large' />
                 </Box>
-            </Tooltip>
+            </Tooltip> */}
 
             <Tooltip title="GitHub" placement="top">
                 <Box sx={sxNavLink} onClick={() => handleClick('github')}>

@@ -17,7 +17,12 @@ import {
     sxHeroContent,
     sxHeroText,
     sxAboutBody,
+    softwareContent,
+    softwareCard,
     sxHeader,
+    sxSubHeader,
+    sxSubText,
+    sxSubTextBoldHeader,
     sxButton,
     trans,
 } from '../App/App.style';
@@ -57,26 +62,41 @@ function SoftwareDevelopment() {
             {/* <Box sx={sxAboutContainer}>
                 <Typography variant="h4">Hey - Hi - Hello - Howdy</Typography>
             </Box> */}
+            <Box sx={sxHeroContent} >
 
-            <Box sx={{ textAlign: 'center', display: 'flex', flexDirection: 'column', gap: 8 }}>
+                <Typography variant="h1" sx={sxSubHeader} >Software Development</Typography>
 
-                <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-                    <Typography variant="h3">Web App: Creative Cook</Typography>
+                <Box>
+                    <Typography variant="body1" sx={sxSubText}>This section will be about myself any some cool details that makes me great.</Typography>
+                </Box>
+            </Box>
 
-                    <Typography variant="body1">Creative Cook is an application to encourage cooks of all different experience levels to branch out and try new things. The app allows a user to start by selecting an ingredient they would like to work with. Then, the app will suggest ingredients that pair well with the selected ingredient. After selecting a second ingredient, the app will provide suggestions for a third ingredient. The suggestions will pair well with either of the first two ingredients, or in the case of a "super combo", pair will with both of the already selected ingredients. The idea of a flavor trio to build a recipe off of is a long accepted practice in the culinary arts. After establishing a flavor trio, the app will search recipes across thousands of recipes on the internet and make suggestions based on your flavor combo and any health filters you need. The app will provide a basic description of the recipe and a link to the recipe hosted on the original website. This takes much of the work of finding a good recipe out of the process and allows the cook to focus on what they came here for, the food!</Typography>
+            <Box sx={softwareContent}>
+
+                <Box sx={softwareCard}>
+                    <Typography variant="h3" sx={sxSubTextBoldHeader}>Web App: Creative Cook</Typography>
+
+                </Box>
+
+                {/* <Typography variant="body1">Creative Cook is an application to encourage cooks of all different experience levels to branch out and try new things. The app allows a user to start by selecting an ingredient they would like to work with. Then, the app will suggest ingredients that pair well with the selected ingredient. After selecting a second ingredient, the app will provide suggestions for a third ingredient. The suggestions will pair well with either of the first two ingredients, or in the case of a "super combo", pair will with both of the already selected ingredients. The idea of a flavor trio to build a recipe off of is a long accepted practice in the culinary arts. After establishing a flavor trio, the app will search recipes across thousands of recipes on the internet and make suggestions based on your flavor combo and any health filters you need. The app will provide a basic description of the recipe and a link to the recipe hosted on the original website. This takes much of the work of finding a good recipe out of the process and allows the cook to focus on what they came here for, the food!</Typography>
 
                     <CardMedia sx={{ border: 1, cursor: 'pointer', }}
                         onClick={() => window.open(creativeCookUrl, '_blank', 'noopener', 'noreferrer')}
                         component="img"
                         image="images/ComboTool.png"
                         alt="Creative Cook"
-                    />
+                    /> */}
+
+
+                <Box sx={softwareCard}>
+                    <Typography variant="h3" sx={sxSubTextBoldHeader}>Mobile Web App: Houseplant Palace</Typography>
                 </Box>
 
-                <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-                    <Typography variant="h3">Mobile Web App: Houseplant Palace</Typography>
+                <Box sx={softwareCard}>
+                    <Typography variant="h3" sx={sxSubTextBoldHeader}>Feedback Form</Typography>
+                </Box>
 
-                    <Typography variant="body1">
+                {/* <Typography variant="body1">
                         Mobile forward web app created for houseplant lovers, designed and built individually for my Prime solo project.
                         Full-Stack CRUD application designed to document the growth of one’s houseplants by uploading photos as well as store important information about each plant.
                         User’s are  notified in their dashboard when it’s time to water each plant.
@@ -88,8 +108,8 @@ function SoftwareDevelopment() {
                         component="img"
                         image="images/hp1.jpg"
                         alt="Houseplant Palace"
-                    />
-                </Box>
+                    /> */}
+
 
 
                 {/* <Box sx={sxAboutHeroContent}>

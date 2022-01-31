@@ -73,9 +73,9 @@ function Home() {
             transition={trans.time}
         >
             <Parallax
-                // bgImage="images/eric.jpg"
-                blur={5}
-                strength={-200}
+                // bgImage="images/Poster_168.svg"
+                blur={0}
+                // strength={-200}
                 renderLayer={percentage => (
                     <>
                         <Box sx={{

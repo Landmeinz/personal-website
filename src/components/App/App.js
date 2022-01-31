@@ -2,12 +2,19 @@
 import { HashRouter as Router, Route, Link, Switch, useLocation } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
-// --- components --- //
+// --- COMPONENTS --- //
 import Header from '../Header/Header.jsx';
+import SubHeader from '../Header/SubHeader.jsx';
 import NavBar from '../NavBar/NavBar.jsx';
 import Home from '../Home/Home.jsx';
 import About from '../About/About.jsx';
 import Detail from '../Detail/Detail.jsx';
+// -- PAGE COMPONENTS -- //
+import SoftwareDevelopment from '../Detail/SoftwareDevelopment.jsx';
+import LightingDesign from '../Detail/LightingDesign.jsx';
+import Architecture from '../Detail/Architecture.jsx';
+import GraphicDesign from '../Detail/GraphicDesign.jsx';
+import Sketches from '../Detail/Sketches.jsx';
 
 // --- MUI --- //
 import '@fontsource/roboto/300.css';
@@ -21,6 +28,7 @@ import { ThemeProvider } from '@mui/material/styles';
 // --- STYLES --- // 
 import {
   theme,
+  trans,
   sxAppContainer,
   sxHeaderContainer,
   sxBodyContainer
@@ -46,20 +54,37 @@ function App() {
 
 
   return (
-    <Box sx={{ bgcolor: 'lightblue', height: 'auto', }}>
+    <Box sx={{ bgcolor: 'hsla(0, 0%, 10%, 1)' }}>
+      {/* <Parallax
+        bgImage="images/eric.jpg"
+        strength={300}
+        blur={{ min: -20, max: 20 }}
+        bgImageStyle={{
+          maxHeight: '100vh',
+        }}
+      > */}
+      <Parallax
+        // bgImage="images/bgline.svg"
+        strength={500}
+        blur={{ min: -12, max: 15 }}
+        blur={2}
+        bgImageStyle={{
+          maxHeight: '500vw',
+        }}
+      >
 
-      {/* <Background>
+        {/* <Background>
           <Box sx={{bgImage: "images/hex.jpeg"}}></Box>
         </Background> */}
 
-      <ThemeProvider theme={theme}>
-        <Router>
+        <ThemeProvider theme={theme}>
+          <Router>
 
-          <Box sx={sxHeaderContainer}>
+            {/* <Box sx={sxHeaderContainer}>
             <Header />
             <NavBar />
-          </Box>
-{/* 
+          </Box> */}
+            {/* 
           <Parallax
             // bgImage="images/hex.jpeg"
             bgImageStyle={{
@@ -90,34 +115,52 @@ function App() {
           > */}
 
             <Box sx={sxAppContainer}>
+              <AnimatePresence exitBeforeEnter initial={true}>
+                <Switch>
 
-              <Box sx={sxBodyContainer}>
+                  <Route path="/" exact>
+                    {/* <Home /> */}
 
-                <AnimatePresence exitBeforeEnter initial={true}>
-                  <Switch>
+                    <motion.div
+                      initial={trans.initial}
+                      animate={trans.animate}
+                      exit={trans.exit}
+                      style={trans.style}
+                      transition={trans.time}
+                    >
+                      <Box sx={sxBodyContainer}>
+                        <Header />
+                        <SubHeader />
+                        <SoftwareDevelopment />
+                        {/* <LightingDesign /> */}
+                        {/* <Architecture /> */}
+                        {/* <GraphicDesign /> */}
+                        {/* <Sketches /> */}
+                      </Box>
+                    </motion.div>
 
-                    <Route path="/" exact>
-                      <Home />
-                    </Route>
+                  </Route>
 
-                    <Route path="/detail">
+                  {/* <Route path="/detail">
                       <Detail />
-                    </Route>
+                    </Route> */}
 
-                    <Route path="/about">
+                  {/* <Route path="/about">
                       <About />
-                    </Route>
+                    </Route> */}
 
-                  </Switch>
-                </AnimatePresence>
-
-              </Box>
+                </Switch>
+              </AnimatePresence>
 
             </Box>
-          {/* </Parallax> */}
-        </Router>
-      </ThemeProvider>
-    </Box>
+
+
+            {/* </Parallax> */}
+          </Router>
+        </ThemeProvider>
+      </Parallax>
+      {/* </Parallax> */}
+    </Box >
   );
 }
 

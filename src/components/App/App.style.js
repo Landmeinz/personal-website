@@ -9,12 +9,20 @@
 // --- ANIMATIONS --- //
 
 export const trans = {
-    time: { duration: .45 },
+    time: { duration: 1.8 },
     initial: { rotate: 0, y: 0, opacity: 0 },
     animate: { rotate: 0, y: 0, opacity: 1 },
     // exit:       { rotate: -30 },
 }
 
+export const transHeader = {
+    time: { duration: 1 },
+    initial: { rotate: 20, y: -700, opacity: 0 },
+    animate: { rotate: 0, y: 0, opacity: 1 },
+    // exit:       { rotate: -30 },
+}
+
+import { HlsSharp } from '@mui/icons-material';
 // --- STYLES --- //
 
 import { createTheme } from '@mui/material/styles';
@@ -22,13 +30,13 @@ import { createTheme } from '@mui/material/styles';
 export const theme = createTheme({
     palette: {
         primary: {
-            main: 'hsla(360, 70%, 50%, .9)',
+            main: 'hsla(360, 70%, 50%, .99)',
         },
         secondary: {
-            main: 'hsla(220, 50%, 50%, .9)',
+            main: 'hsla(220, 50%, 50%, .99)',
         },
         info: {
-            main: 'hsla(0, 5%, 10%, .9)'
+            main: 'hsla(0, 5%, 10%, .99)'
         }
     },
     breakpoints: {
@@ -59,15 +67,16 @@ export const sxType = {
 export const sxAppContainer = {
 
     // shared properties
-    // border: '2px solid blue',
+    // border: '2px solid red',
     display: 'flex',
-    position: 'relative',
-    mx: 'auto',
-    height: 'auto',
     flexDirection: 'column',
     alignItems: 'center',
+    height: 'auto',
+    scroll: 'auto',
+    mx: 'auto',
     minWidth: 380,
-    maxWidth: '95%',
+    p: 2
+    // position: 'relative',
     // mt: 3,
     // bgcolor: 'darkblue',
 
@@ -92,7 +101,7 @@ export const sxAppContainer = {
 export const sxHeaderContainer = {
 
     // shared properties
-    // border: '1px solid green',
+    // border: '4px solid red',
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
@@ -132,15 +141,11 @@ export const sxHeaderContainer = {
 }
 
 export const sxBodyContainer = {
-    // border: '1px solid green',
-    // position: 'absolute',
+    border: '1px solid blue',
     display: 'flex',
     flexDirection: 'column',
-    // justifyContent: 'center',
-    // alignItems: 'center',
-    height: '100%',
-    width: '100%'
-    // gap: 1,
+    alignItems: 'center',
+    gap: 50,
 }
 
 
@@ -151,12 +156,38 @@ export const sxBodyContainer = {
 // box that contains the header; not sure why i took it out of the h1 tag; 
 export const sxHeader = {
     // border: '1px solid gray',
-    fontSize: 42,
+    fontSize: '16vw',
     fontWeight: 700,
     lineHeight: .9,
-    textAlign: 'center',
+    // textAlign: 'center',
     color: 'primary.main',
-    cursor: 'pointer',
+    mt: 10,
+    rotate: 5,
+    // mx: 'auto',
+}
+
+export const sxSubHeaderContainer = {
+    display: 'flex', 
+    flexDirection: 'column', 
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: 6, 
+    maxWidth: 1000, 
+}
+
+export const sxSubHeader = {
+    // border: '1px solid green',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    textAlign: 'center',
+    fontSize: '5vw',
+    fontWeight: 500,
+    lineHeight: 1.5,
+    // textAlign: 'center',
+    color: 'primary.main',
+    // mt: 8,
+    // mx: 'auto',
 }
 
 export const sxProfilePhoto = {
@@ -182,7 +213,7 @@ export const sxButtonBox = {
 
     display: 'flex',
     flexDirection: 'row',
-    gap: 1,
+    gap: 4,
 
     // justifyContent: 'center',
     // alignItems: 'center',
@@ -210,9 +241,8 @@ export const sxNavLink = {
     width: 50,
     borderRadius: '50%',
     cursor: 'pointer',
-    boxShadow: 2,
     color: 'primary.main',
-    bgcolor: 'lightblue',
+
 
     '&:hover': {
         transform: 'scale(1.05)',
@@ -250,17 +280,17 @@ export const sxHeroContent = {
     // border: '1px solid gray',
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'space-between',
+    alignItems: 'center',
+    justifyContent: 'center',
     textAlign: 'center',
-    width: '80%',
-    gap: 10,
-    mb: 2,
-    color: 'info.main',
+    gap: 5,
+    mb: 20,
+    color: 'primary.main',
     borderRadius: 2,
     p: 2,
-    boxShadow: 8,
-    bgcolor: 'lightblue',
-    opacity: '.95',
+    // boxShadow: 8,
+    // bgcolor: 'lightblue',
+    // opacity: '.95',
     // bgcolor: 'lightblue',
     // boxShadow: 4,
 
@@ -269,27 +299,31 @@ export const sxHeroContent = {
 export const sxHeroText = {
 
     fontWeight: 500,
-    // color: 'info.main',
-    '&:hover': {
-        transform: 'scale(1.03)',
-        // boxShadow: 4,
-        // borderRadius: 5,
-        cursor: 'pointer',
-        color: 'primary.main',
-        // p: 1,
-        // border: 1,
-        // borderColor: 'primary.main',
-    }
+    color: 'primary.main',
+
+    // '&:hover': {
+    //     transform: 'scale(1.03)',
+    //     // boxShadow: 4,
+    //     // borderRadius: 5,
+    //     cursor: 'pointer',
+    //     color: 'primary.main',
+    //     // p: 1,
+    //     // border: 1,
+    //     // borderColor: 'primary.main',
+    // }
 }
 
 export const sxSubText = {
+    fontSize: '1.8vw',
     fontWeight: 300,
     textAlign: 'center',
 }
 
 export const sxSubTextBoldHeader = {
+    fontSize: '3vw',
     fontWeight: 500,
     textAlign: 'center',
+    color: 'primary.main',
     // mb: 6,
 }
 
@@ -297,6 +331,30 @@ export const sxSubTextBold = {
     fontWeight: 500,
     textAlign: 'center',
 }
+
+export const softwareContent = {
+    textAlign: 'center', 
+    display: 'flex', 
+    flexDirection: 'column', 
+    alignItems: 'center',
+    gap: 6
+}
+
+export const softwareCard = {
+    // border: '1px solid white',
+    display: 'flex',
+    justifyContent: 'center',
+    // alignItems: 'center',
+    p: 2,
+    width: 700,
+    height: 700*.618,
+
+    bgcolor: 'hsla(0, 0%, 15%, 1)',
+    borderRadius: 3,
+    boxShadow: 5,
+
+}
+
 
 
 

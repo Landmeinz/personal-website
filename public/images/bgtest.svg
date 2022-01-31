@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 2560 12800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1.92497,0,0,1,-1207.67,-9)">
+        <path d="M1958.04,1493.5C1958.04,1490.11 1956.61,1487.35 1954.85,1487.35C1954.85,1487.35 629.783,1487.35 629.783,1487.35C628.021,1487.35 626.591,1490.11 626.591,1493.5L626.591,1577.1C626.591,1580.49 628.021,1583.24 629.783,1583.24C629.783,1583.24 1954.85,1583.24 1954.85,1583.24C1956.61,1583.24 1958.04,1580.49 1958.04,1577.1L1958.04,1493.5ZM1957.26,1493.5C1957.26,1490.93 1956.18,1488.85 1954.85,1488.85L629.783,1488.85C628.451,1488.85 627.37,1490.93 627.37,1493.5L627.37,1577.1C627.37,1579.66 628.451,1581.74 629.783,1581.74L1954.85,1581.74C1956.18,1581.74 1957.26,1579.66 1957.26,1577.1L1957.26,1493.5Z"/>
+    </g>
+    <g transform="matrix(0.587417,0,0,0.587417,513.385,10.0152)">
+        <rect x="247.313" y="189.156" width="2115.5" height="1075.2" style="fill:rgb(235,235,235);"/>
+    </g>
+    <g transform="matrix(0.442415,0,0,0.442415,412.136,24.0712)">
+        <text x="575.047px" y="840.562px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:607.956px;">ERIC</text>
+        <text x="575.047px" y="1468.41px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:607.956px;">MEINZER</text>
+    </g>
+    <g transform="matrix(0.478109,0,0,0.478109,351.907,1958.5)">
+        <text x="193.549px" y="1038.01px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:95.598px;">Currently I&apos;m focusing on building a career around crafting intuitive digital products.</text>
+        <text x="-130.681px" y="1136.74px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:95.598px;">Why did I get into tech? I don&apos;t have a great answer<tspan x="2039.83px 2066.39px " y="1136.74px 1136.74px ">, </tspan>but somehow it felt like the obvious next step.</text>
+    </g>
+    <g transform="matrix(1,0,0,1,64.4472,10.4259)">
+        <text x="560.338px" y="2043.43px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:45.706px;">Software Developer</text>
+        <text x="560.338px" y="2090.63px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:45.706px;">HTML<tspan x="683.061px 695.76px " y="2090.63px 2090.63px "> /</tspan> JavaScript / React /</text>
+        <text x="560.338px" y="2137.83px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:45.706px;">Node / Express / PostgreSQL</text>
+    </g>
+    <g transform="matrix(1,0,0,1,122.358,40.2813)">
+        <g transform="matrix(0.478109,0,0,0.478109,573.121,1527.87)">
+            <text x="1762.23px" y="840.562px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:95.598px;">LinkedIn</text>
+        </g>
+        <g transform="matrix(0.478109,0,0,0.478109,558.759,1709.26)">
+            <text x="1794.18px" y="840.562px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:95.598px;">GitHub</text>
+        </g>
+        <g transform="matrix(-0.3139,3.84416e-17,-3.84416e-17,-0.3139,2080.93,2850.57)">
+            <path d="M1238.15,2862.44L1323.24,2947.53L1192.34,2947.53L1061.43,2816.62L1192.34,2685.71L1323.24,2685.71L1238.15,2770.8L2108.7,2770.8L2108.7,2862.44L1238.15,2862.44Z" style="fill:rgb(235,235,235);"/>
+        </g>
+        <g transform="matrix(-0.3139,3.84416e-17,-3.84416e-17,-0.3139,2080.93,3029.25)">
+            <path d="M1238.15,2862.44L1323.24,2947.53L1192.34,2947.53L1061.43,2816.62L1192.34,2685.71L1323.24,2685.71L1238.15,2770.8L2108.7,2770.8L2108.7,2862.44L1238.15,2862.44Z" style="fill:rgb(235,235,235);"/>
+        </g>
+        <g transform="matrix(1.37973e-17,0.225328,-0.225328,1.37973e-17,2404.99,1786.28)">
+            <circle cx="799.485" cy="2559.99" r="160.402" style="fill:rgb(179,179,179);"/>
+        </g>
+        <g transform="matrix(1.37973e-17,0.225328,-0.225328,1.37973e-17,2404.99,1964.96)">
+            <circle cx="799.485" cy="2559.99" r="160.402" style="fill:rgb(179,179,179);"/>
+        </g>
+    </g>
+    <g transform="matrix(0.883592,0,0,0.883592,8.6592,-463.063)">
+        <circle cx="799.485" cy="2559.99" r="160.402" style="fill:rgb(235,235,235);"/>
+    </g>
+    <g transform="matrix(0.587417,0,0,0.587417,300.518,144.399)">
+        <path d="M1238.15,2862.44L1323.24,2947.53L1192.34,2947.53L1061.43,2816.62L1192.34,2685.71L1323.24,2685.71L1238.15,2770.8L2108.7,2770.8L2108.7,2862.44L1238.15,2862.44Z" style="fill:rgb(235,235,235);"/>
+    </g>
+    <g transform="matrix(0.587417,0,0,0.587417,1055.26,-575.031)">
+        <text x="-150.796px" y="2629.05px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:77.809px;fill:rgb(103,103,103);">YOU KNOW WHA<tspan x="478.856px 524.979px 545.191px 592.719px " y="2629.05px 2629.05px 2629.05px 2629.05px ">T TH</tspan>EY<tspan x="751.301px 772.918px 824.816px 870.939px " y="2629.05px 2629.05px 2629.05px 2629.05px "> SAY</tspan></text>
+        <text x="-77.755px" y="2789.76px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:77.809px;fill:rgb(103,103,103);">That&apos;s a feature, not a bug.</text>
+        <text x="-770.246px" y="2950.46px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:77.809px;fill:rgb(103,103,103);">As you are about to see, I have a lot of dif<tspan x="664.392px 686.01px " y="2950.46px 2950.46px ">fe</tspan>rent interests and skills.</text>
+        <text x="-40.028px" y="3111.17px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:77.809px;fill:rgb(103,103,103);">Let me show you around</text>
+    </g>
+    <g transform="matrix(0.587417,0,0,0.587417,1051.91,-3.23916)">
+        <text x="-774.502px" y="2629.05px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:77.809px;fill:rgb(103,103,103);">Software Development | Lighting Design | <tspan x="671.611px 723.509px " y="2629.05px 2629.05px ">Ar</tspan>chitecture | Other W<tspan x="1438.45px 1481.73px " y="2629.05px 2629.05px ">or</tspan>k</text>
+    </g>
+    <g transform="matrix(0.587417,0,0,0.587417,528.107,604.421)">
+        <path d="M2274.68,3450.88C2274.68,3421.04 2250.46,3396.81 2220.61,3396.81L339.387,3396.81C309.544,3396.81 285.316,3421.04 285.316,3450.88L285.316,4424.16C285.316,4454.01 309.544,4478.23 339.387,4478.23L2220.61,4478.23C2250.46,4478.23 2274.68,4454.01 2274.68,4424.16L2274.68,3450.88Z" style="fill:rgb(235,235,235);"/>
+        <g transform="matrix(0.813918,0,0,0.813918,-297.259,2847.34)">
+            <text x="1680.87px" y="840.562px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:95.598px;">PROJECT<tspan x="2125.3px 2151.86px " y="840.562px 840.562px "> 1</tspan></text>
+        </g>
+    </g>
+    <g transform="matrix(0.587417,0,0,0.587417,528.107,1526.17)">
+        <path d="M2274.68,3450.88C2274.68,3421.04 2250.46,3396.81 2220.61,3396.81L339.387,3396.81C309.544,3396.81 285.316,3421.04 285.316,3450.88L285.316,4424.16C285.316,4454.01 309.544,4478.23 339.387,4478.23L2220.61,4478.23C2250.46,4478.23 2274.68,4454.01 2274.68,4424.16L2274.68,3450.88Z" style="fill:rgb(235,235,235);"/>
+        <g transform="matrix(0.813918,0,0,0.813918,-297.259,2847.34)">
+            <text x="1680.87px" y="840.562px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:95.598px;">PROJECT<tspan x="2125.3px 2151.86px " y="840.562px 840.562px "> 2</tspan></text>
+        </g>
+    </g>
+    <g transform="matrix(0.587417,0,0,0.587417,528.107,2427.56)">
+        <path d="M2274.68,3450.88C2274.68,3421.04 2250.46,3396.81 2220.61,3396.81L339.387,3396.81C309.544,3396.81 285.316,3421.04 285.316,3450.88L285.316,4424.16C285.316,4454.01 309.544,4478.23 339.387,4478.23L2220.61,4478.23C2250.46,4478.23 2274.68,4454.01 2274.68,4424.16L2274.68,3450.88Z" style="fill:rgb(235,235,235);"/>
+        <g transform="matrix(0.813918,0,0,0.813918,-297.259,2847.34)">
+            <text x="1680.87px" y="840.562px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:95.598px;">PROJECT<tspan x="2125.3px 2151.86px " y="840.562px 840.562px "> 3</tspan></text>
+        </g>
+    </g>
+    <g transform="matrix(0.478109,0,0,0.478109,351.907,5289.35)">
+        <text x="672.845px" y="840.562px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:95.598px;">What did you do before pivoting into software development?</text>
+        <text x="399.215px" y="939.288px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:95.598px;">From 2016-2021 I was an <tspan x="1509.84px 1573.6px " y="939.288px 939.288px ">Ar</tspan>chitectural Lighting Designer and consultant.</text>
+    </g>
+    <g transform="matrix(0.587417,0,0,0.587417,528.107,3864.69)">
+        <path d="M2274.68,3450.88C2274.68,3421.04 2250.46,3396.81 2220.61,3396.81L339.387,3396.81C309.544,3396.81 285.316,3421.04 285.316,3450.88L285.316,4424.16C285.316,4454.01 309.544,4478.23 339.387,4478.23L2220.61,4478.23C2250.46,4478.23 2274.68,4454.01 2274.68,4424.16L2274.68,3450.88Z" style="fill:rgb(235,235,235);"/>
+        <g transform="matrix(0.813918,0,0,0.813918,-297.259,2847.34)">
+            <text x="1680.87px" y="840.562px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:95.598px;">PROJECT<tspan x="2125.3px 2151.86px " y="840.562px 840.562px "> 1</tspan></text>
+        </g>
+    </g>
+    <g transform="matrix(0.587417,0,0,0.587417,528.107,4786.44)">
+        <path d="M2274.68,3450.88C2274.68,3421.04 2250.46,3396.81 2220.61,3396.81L339.387,3396.81C309.544,3396.81 285.316,3421.04 285.316,3450.88L285.316,4424.16C285.316,4454.01 309.544,4478.23 339.387,4478.23L2220.61,4478.23C2250.46,4478.23 2274.68,4454.01 2274.68,4424.16L2274.68,3450.88Z" style="fill:rgb(235,235,235);"/>
+        <g transform="matrix(0.813918,0,0,0.813918,-297.259,2847.34)">
+            <text x="1680.87px" y="840.562px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:95.598px;">PROJECT<tspan x="2125.3px 2151.86px " y="840.562px 840.562px "> 2</tspan></text>
+        </g>
+    </g>
+    <g transform="matrix(0.587417,0,0,0.587417,528.107,5687.83)">
+        <path d="M2274.68,3450.88C2274.68,3421.04 2250.46,3396.81 2220.61,3396.81L339.387,3396.81C309.544,3396.81 285.316,3421.04 285.316,3450.88L285.316,4424.16C285.316,4454.01 309.544,4478.23 339.387,4478.23L2220.61,4478.23C2250.46,4478.23 2274.68,4454.01 2274.68,4424.16L2274.68,3450.88Z" style="fill:rgb(235,235,235);"/>
+        <g transform="matrix(0.813918,0,0,0.813918,-297.259,2847.34)">
+            <text x="1680.87px" y="840.562px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:95.598px;">PROJECT<tspan x="2125.3px 2151.86px " y="840.562px 840.562px "> 3</tspan></text>
+        </g>
+    </g>
+    <g transform="matrix(0.478109,0,0,0.478109,349.095,8306.39)">
+        <text x="938.517px" y="840.562px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:95.598px;">So how exactly did you get into lighting design?</text>
+        <text x="851.858px" y="939.288px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:95.598px;">W<tspan x="940.361px 993.528px " y="939.288px 939.288px ">el</tspan>l, I studied design and architecture at university!</text>
+        <text x="583.479px" y="1038.01px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:95.598px;">I received a Bachelor of Science in Design - <tspan x="2459.26px 2523.03px " y="1038.01px 1038.01px ">Ar</tspan>chitecture in 201<tspan x="3249.25px " y="1038.01px ">1</tspan></text>
+    </g>
+    <g transform="matrix(0.587417,0,0,0.587417,528.107,6904.35)">
+        <path d="M2274.68,3450.88C2274.68,3421.04 2250.46,3396.81 2220.61,3396.81L339.387,3396.81C309.544,3396.81 285.316,3421.04 285.316,3450.88L285.316,4424.16C285.316,4454.01 309.544,4478.23 339.387,4478.23L2220.61,4478.23C2250.46,4478.23 2274.68,4454.01 2274.68,4424.16L2274.68,3450.88Z" style="fill:rgb(235,235,235);"/>
+        <g transform="matrix(0.813918,0,0,0.813918,-297.259,2847.34)">
+            <text x="1680.87px" y="840.562px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:95.598px;">PROJECT<tspan x="2125.3px 2151.86px " y="840.562px 840.562px "> 1</tspan></text>
+        </g>
+    </g>
+    <g transform="matrix(0.587417,0,0,0.587417,528.107,7826.1)">
+        <path d="M2274.68,3450.88C2274.68,3421.04 2250.46,3396.81 2220.61,3396.81L339.387,3396.81C309.544,3396.81 285.316,3421.04 285.316,3450.88L285.316,4424.16C285.316,4454.01 309.544,4478.23 339.387,4478.23L2220.61,4478.23C2250.46,4478.23 2274.68,4454.01 2274.68,4424.16L2274.68,3450.88Z" style="fill:rgb(235,235,235);"/>
+        <g transform="matrix(0.813918,0,0,0.813918,-297.259,2847.34)">
+            <text x="1680.87px" y="840.562px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:95.598px;">PROJECT<tspan x="2125.3px 2151.86px " y="840.562px 840.562px "> 2</tspan></text>
+        </g>
+    </g>
+    <g transform="matrix(0.587417,0,0,0.587417,528.107,8727.49)">
+        <path d="M2274.68,3450.88C2274.68,3421.04 2250.46,3396.81 2220.61,3396.81L339.387,3396.81C309.544,3396.81 285.316,3421.04 285.316,3450.88L285.316,4424.16C285.316,4454.01 309.544,4478.23 339.387,4478.23L2220.61,4478.23C2250.46,4478.23 2274.68,4454.01 2274.68,4424.16L2274.68,3450.88Z" style="fill:rgb(235,235,235);"/>
+        <g transform="matrix(0.813918,0,0,0.813918,-297.259,2847.34)">
+            <text x="1680.87px" y="840.562px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:95.598px;">PROJECT<tspan x="2125.3px 2151.86px " y="840.562px 840.562px "> 3</tspan></text>
+        </g>
+    </g>
+    <g transform="matrix(0.903509,0,0,1,123.425,0)">
+        <path d="M1280.8,1980.35C1280.8,1979.52 1280.06,1978.85 1279.14,1978.85L497.973,1978.85C497.056,1978.85 496.313,1979.52 496.313,1980.35L496.313,2198.67C496.313,2199.5 497.056,2200.17 497.973,2200.17L1279.14,2200.17C1280.06,2200.17 1280.8,2199.5 1280.8,2198.67L1280.8,1980.35ZM1279.14,1980.35L497.973,1980.35L497.973,2198.67L1279.14,2198.67L1279.14,1980.35Z"/>
+    </g>
+    <g transform="matrix(0.478109,0,0,0.478109,350.836,12362.5)">
+        <text x="1758.78px" y="840.562px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:95.598px;">GO <tspan x="1932.33px 1989px 2063.36px " y="840.562px 840.562px 840.562px ">TOP</tspan></text>
+    </g>
+    <g transform="matrix(1.27513e-17,0.208244,-0.587417,3.59689e-17,2934.53,12252.8)">
+        <path d="M1559.94,2862.44L1799.96,2947.53L1430.69,2947.53L1061.43,2816.62L1430.69,2685.71L1799.96,2685.71L1559.94,2770.8L2108.7,2770.8L2108.7,2862.44L1559.94,2862.44Z" style="fill:rgb(235,235,235);"/>
+    </g>
+    <g transform="matrix(0.478109,0,0,0.478109,351.126,1408.88)">
+        <text x="1517.61px" y="840.562px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:95.598px;">HEY<tspan x="1701.85px 1728.41px " y="840.562px 840.562px ">, </tspan>that&apos;s my face!</text>
+    </g>
+    <g transform="matrix(0.478109,0,0,0.478109,349.095,11174.9)">
+        <text x="477.798px" y="840.562px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:95.598px;">I have a bunch of other interests and work I&apos;ve created over the years</text>
+        <text x="1034.23px" y="939.288px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:95.598px;">Shout out to anyone that made it this far</text>
+        <text x="2756.07px" y="939.288px" style="font-family:'AppleColorEmoji', 'Apple Color Emoji';font-size:95.598px;">❤️</text>
+    </g>
+    <g>
+        <g transform="matrix(0.587417,0,0,0.587417,528.107,9772.86)">
+            <path d="M2274.68,3450.88C2274.68,3421.04 2250.46,3396.81 2220.61,3396.81L339.387,3396.81C309.544,3396.81 285.316,3421.04 285.316,3450.88L285.316,4424.16C285.316,4454.01 309.544,4478.23 339.387,4478.23L2220.61,4478.23C2250.46,4478.23 2274.68,4454.01 2274.68,4424.16L2274.68,3450.88Z" style="fill:rgb(235,235,235);"/>
+        </g>
+        <g transform="matrix(0.478109,0,0,0.478109,353.492,11629.2)">
+            <text x="1361.03px" y="840.562px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:95.598px;">go to random projects page</text>
+            <text x="1632.05px" y="939.288px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:95.598px;">graphic design</text>
+            <text x="1807.46px" y="1038.01px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:95.598px;">waves</text>
+            <text x="1701.15px" y="1136.74px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:95.598px;">sketchbook</text>
+        </g>
+    </g>
+</svg>

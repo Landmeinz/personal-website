@@ -9,9 +9,16 @@ import Tooltip from '@mui/material/Tooltip';
 
 // --- STYLES --- // 
 import {
+    transHeader,
     sxHeader,
     sxProfilePhoto
 } from '../App/App.style';
+
+// --- PAGE ANIMATIONS FRAMER MOTION --- //
+import { motion, AnimatePresence } from "framer-motion"
+
+// --- PARALLAX --- // 
+import { Parallax, Background } from 'react-parallax';
 
 
 // onClick={() => history.push('/')} sx={{cursor: 'pointer'}
@@ -21,21 +28,28 @@ function Header() {
     const history = useHistory();
 
     return (
-        <Box >
+        <motion.div
+            initial={transHeader.initial}
+            animate={transHeader.animate}
+            exit={transHeader.exit}
+            style={transHeader.style}
+            transition={transHeader.time}
+        >
+            <Box>
 
-            <Tooltip title="That's Me!" placement="bottom" >
-                <Typography onClick={() => history.push('/')} sx={sxHeader}>ERIC MEINZER</Typography>
-            </Tooltip>
+                {/* <Parallax
+                bgImage="images/Poster_168.svg"
+                strength={500}
+                blur={0}
+            > */}
+                <Typography variant='h1' sx={sxHeader}>ERIC <br /> MEINZER</Typography>
 
-            {/* <Tooltip title="That's Me!" placement="bottom">
-                <CardMedia sx={sxProfilePhoto}
-                    component="img"
-                    image="images/eric.jpg"
-                    alt="super handsome photo of Eric"
-                />
-    </Tooltip> */}
-        </Box >
+                {/* </Parallax> */}
+            </Box>
+        </motion.div>
+
     )
+
 }; // Header
 
 export default Header;
