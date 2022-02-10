@@ -91,8 +91,7 @@ function NavBar() {
             <Tooltip title="LinkedIn" placement="top">
                 <Box sx={sxNavLink} onClick={() => handleClick('linkedin')}>
                     <LinkedInIcon fontSize='large' />
-                </Box>
-            </Tooltip>
+                </Box>           </Tooltip>
 
             {/* <Tooltip title="Resume" placement="left">
                 <Box sx={sxNavLink} onClick={() => handleClick('resume')}>
